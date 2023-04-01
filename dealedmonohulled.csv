@@ -1,10 +1,9 @@
-Make,Variant,"Length 
-(ft)",Geographic Region,Country/Region/State ,Listing Price (USD),Year
+Make,Variant,Length,GeoRegion,CRS,Price,Year
 Alubat,Ovni 395,41,Europe,France,267233,2005
 Bavaria,38 Cruiser,38,Europe,Croatia,75178,2005
 Bavaria,38 Cruiser,38,Europe,Croatia,66825,2005
 Bavaria,38 Cruiser,38,Europe,Croatia,54661,2005
-Bavaria,38 Cruiser ,38,Europe,Croatia,53447,2005
+Bavaria,38 Cruiser,38,Europe,Croatia,53447,2005
 Bavaria,38 Cruiser,38,Europe,Greece,91101,2005
 Bavaria,39 Cruiser,39,Europe,Greece,66748,2005
 Bavaria,42 Match,41,Europe,Croatia,78945,2005
@@ -34,15 +33,15 @@ Bavaria,49 Cruiser,50,Europe,Croatia,103249,2005
 Bavaria,49 Cruiser,50,Europe,Spain,145744,2005
 Beneteau,First 40.7,39,Europe,Croatia,157889,2005
 Beneteau,Cyclades 39.3,39,USA,Florida,72900,2005
-Beneteau,Cyclades 39.3 ,39,Europe,Greece,78975,2005
+Beneteau,Cyclades 39.3,39,Europe,Greece,78975,2005
 Beneteau,First 40.7,39,USA,Illinois,124500,2005
-Beneteau,Cyclades 39.3 ,39,Europe,Italy,103275,2005
-Beneteau,Cyclades 39.3 ,39,Europe,Italy,82620,2005
+Beneteau,Cyclades 39.3,39,Europe,Italy,103275,2005
+Beneteau,Cyclades 39.3,39,Europe,Italy,82620,2005
 Beneteau,Cyclades 39.3,39,Caribbean,Mexico,99000,2005
-Beneteau,Cyclades 39.3 ,39,Europe,Portugal,101427,2005
-Beneteau,Cyclades 39.3 ,39,Europe,Spain,108108,2005
-Beneteau,Cyclades 39.3 ,39,Europe,Spain,103249,2005
-Beneteau,Cyclades 39.3 ,39,Europe,United Kingdom,95860,2005
+Beneteau,Cyclades 39.3,39,Europe,Portugal,101427,2005
+Beneteau,Cyclades 39.3,39,Europe,Spain,108108,2005
+Beneteau,Cyclades 39.3,39,Europe,Spain,103249,2005
+Beneteau,Cyclades 39.3,39,Europe,United Kingdom,95860,2005
 Beneteau,Oceanis 423,43,USA,Connecticut,139995,2005
 Beneteau,Cyclades 43.3,43,Europe,France,108108,2005
 Beneteau,Cyclades 43.3,43,Europe,France,106519,2005
@@ -70,7 +69,7 @@ Beneteau,Oceanis Clipper 523,53,Europe,Spain,224719,2005
 Beneteau,Oceanis Clipper 523,53,Europe,Spain,223504,2005
 Beneteau,Oceanis 523,53,Europe,Spain,212572,2005
 Beneteau,56,56,Europe,Spain,461603,2005
-Beneteau ,Cyclades 50.5,51,Caribbean,Grenada,105000,2005
+Beneteau,Cyclades 50.5,51,Caribbean,Grenada,105000,2005
 C&C,121,40,USA,Rhode Island,184900,2005
 Cabo Rico,42,46,USA,Rhode Island,270000,2005
 Caliber,40 LRC SE,41,USA,Florida,259000,2005
@@ -170,7 +169,7 @@ Jeanneau,Sun Odyssey 54 DS,55,Europe,Portugal,267233,2005
 Jeanneau,Sun Odyssey 54 DS,55,Europe,Spain,358335,2005
 Jeanneau,Sun Odyssey 54 DS,55,Europe,Spain,358287,2005
 Jeanneau,Sun Odyssey 54 DS,55,Europe,Spain,301204,2005
-Jeanneau ,Sun Odyssey 49,49,Caribbean,Martinique,157968,2005
+Jeanneau,Sun Odyssey 49,49,Caribbean,Martinique,157968,2005
 Malo,43 Classic,44,Europe,Netherlands,351047,2005
 Malo,46,46,Europe,United Kingdom,393128,2005
 Moody,49,48,Europe,Spain,406940,2005
@@ -215,7 +214,7 @@ Bavaria,39 Cruiser,39,Europe,Turkey,94770,2006
 Bavaria,42 Match,41,Europe,Croatia,57091,2006
 Bavaria,42 Match,41,Europe,Croatia,57091,2006
 Bavaria,42 Cruiser,42,USA,California,109000,2006
-Bavaria,42 Cruiser ,42,Europe,Croatia,109065,2006
+Bavaria,42 Cruiser,42,Europe,Croatia,109065,2006
 Bavaria,42 Cruiser,42,Europe,Italy,102034,2006
 Bavaria,42 Cruiser,42,Europe,Netherlands,120862,2006
 Bavaria,42 Cruiser,42,Europe,Portugal,145764,2006
@@ -239,14 +238,14 @@ Bavaria,50 Cruiser,49,Europe,Italy,121470,2006
 Bavaria,50 Cruiser,49,Europe,Italy,115396,2006
 Bavaria,50 Cruiser,49,Europe,Spain,139690,2006
 Beneteau,Cyclades 39.3,39,USA,California,149000,2006
-Beneteau,Cyclades 39.3 ,39,Europe,Croatia,74115,2006
-Beneteau,Cyclades 39.3 ,39,Europe,Croatia,72639,2006
-Beneteau,Cyclades 39.3 ,39,Europe,Greece,71667,2006
+Beneteau,Cyclades 39.3,39,Europe,Croatia,74115,2006
+Beneteau,Cyclades 39.3,39,Europe,Croatia,72639,2006
+Beneteau,Cyclades 39.3,39,Europe,Greece,71667,2006
 Beneteau,First 40.7,39,USA,Hawaii,160000,2006
-Beneteau,Cyclades 39.3 ,39,USA,New York,90838,2006
+Beneteau,Cyclades 39.3,39,USA,New York,90838,2006
 Beneteau,Cyclades 39.3,39,USA,North Carolina,99000,2006
-Beneteau,Cyclades 39.3 ,39,Europe,Portugal,99630,2006
-Beneteau,Cyclades 39.3 ,39,Europe,Turkey,91102,2006
+Beneteau,Cyclades 39.3,39,Europe,Portugal,99630,2006
+Beneteau,Cyclades 39.3,39,Europe,Turkey,91102,2006
 Beneteau,423,43,USA,Alabama,176000,2006
 Beneteau,Cyclades 43.4,43,Europe,Croatia,97176,2006
 Beneteau,Cyclades 43.4,43,Europe,Croatia,95961,2006
@@ -285,7 +284,7 @@ Beneteau,Oceanis 50,49,Caribbean,Grenada,189000,2006
 Beneteau,Oceanis 50,49,Europe,Italy,205284,2006
 Beneteau,Oceanis 50,49,Europe,Malta,206498,2006
 Beneteau,Oceanis 50,49,Europe,Portugal,224719,2006
-Beneteau,Oceanis 50 ,49,Europe,Romania,157668,2006
+Beneteau,Oceanis 50,49,Europe,Romania,157668,2006
 Beneteau,Oceanis 50,49,Europe,United Kingdom,199781,2006
 Beneteau,Cyclades 50.5,51,Europe,Croatia,103249,2006
 Beneteau,Cyclades 50.5,51,Europe,France,144549,2006
@@ -306,7 +305,7 @@ Catalina,387,38,USA,North Carolina,159900,2006
 Catalina,400 MK II,40,USA,Florida,145000,2006
 Catalina,42 MK II,42,USA,Massachusetts,159900,2006
 Catalina,Morgan 440,46,USA,Florida,219000,2006
-Catalina ,Morgan 440 DS Sloop,46,Caribbean,Mexico,200000,2006
+Catalina,Morgan 440 DS Sloop,46,Caribbean,Mexico,200000,2006
 Comar,Comet 41S,41,Europe,Italy,139690,2006
 Comar,Comet 41S,41,Europe,Italy,120255,2006
 Delphia,40,39,Europe,Italy,78945,2006
@@ -473,15 +472,15 @@ Bavaria,50 Cruiser,49,Europe,Italy,133617,2007
 Bavaria,50 Cruiser,49,Europe,Italy,121470,2007
 Bavaria,50 Cruiser,49,Europe,Malta,184634,2007
 Bavaria,50 Cruiser,49,Europe,Spain,182212,2007
-Bavaria ,Cruiser 46,46,Caribbean,Saint Lucia,152910,2007
-Bavaria ,Cruiser 50,49,Caribbean,Martinique,200498,2007
-Beneteau,Cyclades 39.3 ,39,Europe,Croatia,78955,2007
-Beneteau,Cyclades 39.3 ,39,Europe,Croatia,72639,2007
-Beneteau,Cyclades 39.3 ,39,Europe,Croatia,66808,2007
-Beneteau,Cyclades 39.3 ,39,Europe,France,87458,2007
-Beneteau,Cyclades 39.3 ,39,Europe,Greece,70452,2007
-Beneteau,Cyclades 39.3 ,39,Europe,Spain,94746,2007
-Beneteau,Cyclades 39.3 ,39,Europe,Spain,83814,2007
+Bavaria,Cruiser 46,46,Caribbean,Saint Lucia,152910,2007
+Bavaria,Cruiser 50,49,Caribbean,Martinique,200498,2007
+Beneteau,Cyclades 39.3,39,Europe,Croatia,78955,2007
+Beneteau,Cyclades 39.3,39,Europe,Croatia,72639,2007
+Beneteau,Cyclades 39.3,39,Europe,Croatia,66808,2007
+Beneteau,Cyclades 39.3,39,Europe,France,87458,2007
+Beneteau,Cyclades 39.3,39,Europe,Greece,70452,2007
+Beneteau,Cyclades 39.3,39,Europe,Spain,94746,2007
+Beneteau,Cyclades 39.3,39,Europe,Spain,83814,2007
 Beneteau,First 40.7,40,Europe,Croatia,91125,2007
 Beneteau,Oceanis 40,40,Europe,Greece,95985,2007
 Beneteau,Oceanis 40,40,Europe,Spain,146488,2007
@@ -525,9 +524,9 @@ Beneteau,523,53,USA,Florida,279000,2007
 Beneteau,Oceanis Clipper 523,53,Europe,France,191922,2007
 Beneteau,Oceanis Clipper 523,53,Europe,Greece,218645,2007
 Beneteau,Oceanis 523,53,Europe,Greece,194351,2007
-Beneteau ,Oceanis 50,49,Caribbean,Dominican Republic,265000,2007
-Beneteau ,Oceanis 50,49,Caribbean,Martinique,206574,2007
-Beneteau ,Cyclades 50.5,51,Caribbean,Guadeloupe,303785,2007
+Beneteau,Oceanis 50,49,Caribbean,Dominican Republic,265000,2007
+Beneteau,Oceanis 50,49,Caribbean,Martinique,206574,2007
+Beneteau,Cyclades 50.5,51,Caribbean,Guadeloupe,303785,2007
 Bestevaer,53ST,53,Europe,Netherlands,911022,2007
 Cabo Rico,42,46,USA,Georgia,274000,2007
 Caliber,47 LRC SE,48,USA,Florida,339950,2007
@@ -663,7 +662,7 @@ Jeanneau,Sun Odyssey 45,45,Europe,Italy,109350,2007
 Jeanneau,Sun Odyssey 45 DS,45,Europe,Spain,162811,2007
 Jeanneau,Sun Odyssey 45,45,Europe,Spain,109229,2007
 Jeanneau,Sun Odyssey 49 DS,49,USA,California,249000,2007
-Jeanneau, Sun Odyssey 49 DS,49,Europe,Croatia,230802,2007
+Jeanneau,Sun Odyssey 49 DS,49,Europe,Croatia,230802,2007
 Jeanneau,Sun Odyssey 49 DS,49,Europe,Croatia,230792,2007
 Jeanneau,Sun Odyssey 49 DS,49,Europe,Croatia,230761,2007
 Jeanneau,Sun Odyssey 49 DS,49,Europe,Croatia,229587,2007
@@ -716,7 +715,7 @@ Amel,54,56,Europe,Italy,558760,2008
 Archambault,40 RC,39,Europe,France,127543,2008
 Archambault,40 RC,39,Europe,France,127526,2008
 Bavaria,38 Cruiser,38,Europe,Italy,97176,2008
-Bavaria,38 Cruiser ,38,Europe,Italy,69238,2008
+Bavaria,38 Cruiser,38,Europe,Italy,69238,2008
 Bavaria,38 Cruiser,38,Caribbean,Martinique,92351,2008
 Bavaria,38 Cruiser,38,Europe,Spain,82599,2008
 Bavaria,39 Cruiser,39,USA,Florida,93693,2008
@@ -755,7 +754,7 @@ Bavaria,50 Cruiser,49,Europe,Italy,133622,2008
 Bavaria,50 Cruiser,49,Europe,Romania,159878,2008
 Bavaria,50 Cruiser,49,Europe,Spain,182212,2008
 Bavaria,50 Cruiser,49,Europe,Turkey,163984,2008
-Beneteau,Cyclades 39.3 ,39,Europe,Greece,78955,2008
+Beneteau,Cyclades 39.3,39,Europe,Greece,78955,2008
 Beneteau,Oceanis 40,40,Europe,Croatia,103275,2008
 Beneteau,Oceanis 40,40,Europe,Croatia,84786,2008
 Beneteau,Oceanis 40,40,Europe,Croatia,82599,2008
@@ -876,7 +875,7 @@ Hanse,540e,52,Europe,Greece,249023,2008
 Hanse,540,52,Europe,Greece,242949,2008
 Hanse,540e,52,Europe,Italy,303674,2008
 Hanse,540e,52,Europe,Italy,267244,2008
-Hanse, 540e,52,Caribbean,Mexico,280000,2008
+Hanse,540e,52,Caribbean,Mexico,280000,2008
 Hunter,38,38,USA,Massachusetts,105000,2008
 Hunter,38,38,USA,New York,104000,2008
 Hunter,38,38,USA,Rhode Island,119500,2008
@@ -890,7 +889,7 @@ Hunter,45 Center Cockpit,45,USA,California,245000,2008
 Hunter,45 DS,45,USA,Michigan,210000,2008
 Hunter,45cc,45,USA,Ohio,210000,2008
 Hunter,49,50,USA,Michigan,219900,2008
-Hunter ,45 Center Cockpit,45,Caribbean,Puerto Rico,174900,2008
+Hunter,45 Center Cockpit,45,Caribbean,Puerto Rico,174900,2008
 Hylas,46,46,Europe,United Kingdom,425675,2008
 Island Packet,440,45,Europe,Netherlands,358287,2008
 Island Packet,440,45,Europe,United Kingdom,366387,2008
@@ -981,7 +980,7 @@ Bavaria,47 Cruiser,47,Europe,Italy,120239,2009
 Bavaria,47 Cruiser,47,Europe,Italy,91106,2009
 Bavaria,47 Cruiser,47,Europe,United Kingdom,265131,2009
 Bavaria,50 Cruiser,49,Europe,Croatia,165351,2009
-Bavaria,50 Cruiser ,49,Europe,Croatia,95354,2009
+Bavaria,50 Cruiser,49,Europe,Croatia,95354,2009
 Bavaria,51 Cruiser,49,Europe,Italy,188278,2009
 Bavaria,51 Cruiser,49,Europe,Italy,157911,2009
 Bavaria,56 Cruiser,54,Europe,Turkey,236866,2009
@@ -1027,7 +1026,7 @@ Beneteau,Oceanis 54,54,Europe,Croatia,227117,2009
 Beneteau,Oceanis 54,54,Europe,Croatia,218533,2009
 Beneteau,Oceanis 54,54,Europe,Croatia,212572,2009
 Beneteau,Oceanis 54,54,Europe,Croatia,212543,2009
-Beneteau,Oceanis 54 ,54,Europe,Croatia,206255,2009
+Beneteau,Oceanis 54,54,Europe,Croatia,206255,2009
 Beneteau,Oceanis 54,54,Europe,France,279380,2009
 Beneteau,Oceanis 54,54,Europe,Greece,224688,2009
 Beneteau,Oceanis 54,54,Europe,Greece,206470,2009
@@ -1035,7 +1034,7 @@ Beneteau,Oceanis 54,54,Caribbean,Grenada,239900,2009
 Beneteau,Oceanis 54,54,Caribbean,Guadeloupe,188347,2009
 Beneteau,Oceanis 54,54,Caribbean,Guadeloupe,182000,2009
 Beneteau,Oceanis 54,54,Europe,Turkey,242906,2009
-Beneteau ,America 50,49,Caribbean,Mexico,249000,2009
+Beneteau,America 50,49,Caribbean,Mexico,249000,2009
 Bestevaer,49ST,49,Europe,Netherlands,848957,2009
 B-Yachts,38,38,Europe,Switzerland,207466,2009
 C&C,115,38,USA,Wisconsin,165000,2009
@@ -1112,9 +1111,9 @@ Jeanneau,Sun Odyssey 54 DS,55,Caribbean,Guadeloupe,219940,2009
 Jeanneau,Sun Odyssey 54 DS,55,Europe,Italy,224719,2009
 Jeanneau,Sun Odyssey 54 DS,55,Caribbean,Martinique,220548,2009
 Jeanneau,Sun Odyssey 54 DS,55,Europe,Turkey,321895,2009
-Jeanneau ,Sun Odyssey 50 DS,49,Caribbean,Grenada,220000,2009
-Jeanneau ,Sun Odyssey 50 DS,49,Caribbean,Martinique,206574,2009
-Jeanneau ,Sun Odyssey 49i,49,Caribbean,Saint Vincent and the Grenadines,109363,2009
+Jeanneau,Sun Odyssey 50 DS,49,Caribbean,Grenada,220000,2009
+Jeanneau,Sun Odyssey 50 DS,49,Caribbean,Martinique,206574,2009
+Jeanneau,Sun Odyssey 49i,49,Caribbean,Saint Vincent and the Grenadines,109363,2009
 Malo,40 classic,40,Europe,Sweden,344449,2009
 Moody,45 DS,45,Europe,Greece,394776,2009
 Moody,45 Classic,46,Europe,Germany,358335,2009
@@ -1172,7 +1171,7 @@ Beneteau,Oceanis 50,49,Europe,Spain,218038,2010
 Beneteau,America 50,50,Caribbean,Guadeloupe,54681,2010
 Beneteau,Cyclades 50.5,51,Europe,Greece,139690,2010
 Beneteau,Oceanis 54,54,Europe,Croatia,340115,2010
-Beneteau ,Oceanis 50,49,Caribbean,Martinique,187131,2010
+Beneteau,Oceanis 50,49,Caribbean,Martinique,187131,2010
 Catalina,445,44,USA,California,259000,2010
 Catalina,445,44,USA,Maryland,275000,2010
 Comar,Comet 45s,46,Europe,Italy,188278,2010
@@ -1185,7 +1184,7 @@ Dufour,425 GL,42,Europe,Italy,176107,2010
 Dufour,45e Performance,45,Europe,France,178560,2010
 Dufour,455 GL,45,Europe,Malta,176131,2010
 Dufour,525 GL,50,Europe,France,285454,2010
-Dufour ,45e Performance,45,Caribbean,Antigua and Barbuda,149950,2010
+Dufour,45e Performance,45,Caribbean,Antigua and Barbuda,149950,2010
 Elan,Impression 384,38,Europe,Croatia,109201,2010
 Elan,Impression 434,44,Europe,Croatia,116640,2010
 Elan,450,44,Europe,France,240510,2010
@@ -1306,7 +1305,7 @@ Beneteau,Oceanis 46,47,USA,Connecticut,219000,2011
 Beneteau,Oceanis 46,47,Europe,Croatia,156696,2011
 Beneteau,Oceanis 50 F G5,49,Caribbean,British Virgin Islands,179000,2011
 Beneteau,Oceanis 50,49,Europe,Croatia,176138,2011
-Beneteau,Oceanis 50.5 ,49,Europe,Croatia,169450,2011
+Beneteau,Oceanis 50.5,49,Europe,Croatia,169450,2011
 Beneteau,Oceanis 50,49,Europe,France,205292,2011
 Beneteau,Oceanis 50 Family,49,Europe,Greece,217431,2011
 Beneteau,Oceanis 50,49,Europe,Greece,185856,2011
@@ -1318,8 +1317,8 @@ Beneteau,Oceanis 50.5,50,Europe,Croatia,182204,2011
 Beneteau,Oceanis 50.5,50,Europe,Croatia,174309,2011
 Beneteau,Oceanis 50.5,50,Europe,Croatia,170057,2011
 Beneteau,Oceanis 54,54,Europe,Malta,267197,2011
-Beneteau ,First 45,45,Caribbean,Martinique,194422,2011
-Beneteau ,Oceanis 50,49,Caribbean,Antigua and Barbuda,185000,2011
+Beneteau,First 45,45,Caribbean,Martinique,194422,2011
+Beneteau,Oceanis 50,49,Caribbean,Antigua and Barbuda,185000,2011
 Catalina,375,38,Europe,Netherlands,173094,2011
 Catalina,42 MK II,42,USA,Texas,189000,2011
 Catalina,445,44,Europe,Italy,204069,2011
@@ -1358,7 +1357,7 @@ Hanse,470,47,Europe,Italy,230851,2011
 Hanse,495,50,Europe,Croatia,182204,2011
 Hanse,495,50,Europe,Croatia,180965,2011
 Hanse,495,50,Europe,Spain,358335,2011
-Hanse ,495,50,Europe,Croatia,180990,2011
+Hanse,495,50,Europe,Croatia,180990,2011
 Hunter,39,39,USA,California,155000,2011
 Hunter,50 Center Cockpit,50,USA,Maryland,277500,2011
 Hunter,50,50,USA,North Carolina,284900,2011
@@ -1468,7 +1467,7 @@ Beneteau,Oceanis 54,54,Caribbean,British Virgin Islands,215000,2012
 Beneteau,Oceanis 54,54,Europe,Greece,241725,2012
 Beneteau,Oceanis 54,54,Europe,Greece,224719,2012
 Beneteau,Sense 55,56,Europe,France,352262,2012
-Beneteau ,Oceanis 45,45,Caribbean,Saint Vincent and the Grenadines,165000,2012
+Beneteau,Oceanis 45,45,Caribbean,Saint Vincent and the Grenadines,165000,2012
 Catalina,385,38,USA,California,199000,2012
 Catalina,445,44,Europe,Italy,218645,2012
 Dehler,41,40,Europe,France,193137,2012
@@ -1496,7 +1495,7 @@ Hanse,445,44,Europe,Spain,203845,2012
 Hanse,445,44,Europe,Turkey,157708,2012
 Hanse,470,47,Europe,Germany,216271,2012
 Hanse,545,53,Europe,Netherlands,361980,2012
-Hanse ,495,50,Europe,Croatia,205284,2012
+Hanse,495,50,Europe,Croatia,205284,2012
 Hunter,45 DS,45,USA,Florida,189900,2012
 Jeanneau,Sun Odyssey 409,40,Europe,Greece,92912,2012
 Jeanneau,Sun Odyssey 409,40,USA,New Jersey,189000,2012
@@ -1569,7 +1568,7 @@ Bavaria,Vision 46,46,Europe,Spain,217486,2013
 Bavaria,50 Cruiser,49,Europe,Greece,179775,2013
 Bavaria,56 Cruiser,54,Europe,Croatia,302459,2013
 Bavaria,56 Cruiser,54,Europe,Turkey,394776,2013
-Bavaria ,45 Cruiser,45,Caribbean,Antigua and Barbuda,149950,2013
+Bavaria,45 Cruiser,45,Caribbean,Antigua and Barbuda,149950,2013
 Beneteau,Oceanis 41 Owners Version,40,USA,California,220000,2013
 Beneteau,Oceanis 41,40,USA,California,219500,2013
 Beneteau,Oceanis 41,40,Europe,Croatia,132384,2013
@@ -1586,13 +1585,13 @@ Beneteau,Sense 50,49,Europe,Greece,346988,2013
 Beneteau,Sense 50,49,Europe,Greece,321895,2013
 Beneteau,Oceanis 50 Family,49,Europe,Turkey,224719,2013
 Beneteau,Oceanis 54,54,Europe,Turkey,309098,2013
-Beneteau,Oceanis 54,54,USA,,479805,2013
+Beneteau,Oceanis 54,54,USA,nan,479805,2013
 Beneteau,OCEANIS 55,55,Europe,Croatia,460370,2013
 Beneteau,Oceanis 55,55,Europe,Greece,352262,2013
 Catalina,387,38,USA,Texas,219999,2013
 Catalina,385,39,USA,North Carolina,215000,2013
 Dehler,41,40,Europe,United Kingdom,219832,2013
-Delphia,46 cc,46,Europe,,314606,2013
+Delphia,46 cc,46,Europe,nan,314606,2013
 Dufour,380,38,Caribbean,U.S. Virgin Islands,99950,2013
 Dufour,410,40,Europe,France,160318,2013
 Dufour,410 GL,40,Europe,Italy,143315,2013
@@ -1606,7 +1605,7 @@ Dufour,445,44,Europe,Spain,229578,2013
 Dufour,445 GL,44,Europe,Spain,217431,2013
 Dufour,450 GL,44,Europe,Turkey,180990,2013
 Dufour,500 GL,49,Caribbean,Martinique,358466,2013
-Dufour ,500 GL,49,Caribbean,Martinique,346315,2013
+Dufour,500 GL,49,Caribbean,Martinique,346315,2013
 Elan,450,44,USA,Connecticut,349900,2013
 Elan,450,44,Europe,Croatia,209588,2013
 Elan,Impression 444,45,Europe,Croatia,121348,2013
@@ -1716,7 +1715,7 @@ Bavaria,Cruiser 46,46,Europe,Croatia,151837,2014
 Bavaria,Cruiser 46,46,Europe,Croatia,148193,2014
 Bavaria,Cruiser 46,46,Europe,Germany,198003,2014
 Bavaria,Vision 46,46,USA,Virginia,299000,2014
-Bavaria,Cruiser 46,46,Europe,,201640,2014
+Bavaria,Cruiser 46,46,Europe,nan,201640,2014
 Bavaria,51 Cruiser,49,Europe,Croatia,206498,2014
 Bavaria,51 Cruiser,49,Europe,Spain,303686,2014
 Bavaria,56 Cruiser,54,Europe,Croatia,303674,2014
@@ -1743,7 +1742,7 @@ Beneteau,Sense 50,49,USA,Texas,395000,2014
 Beneteau,Sense 50,49,Europe,Turkey,315834,2014
 Beneteau,Oceanis 55,55,USA,California,535000,2014
 Beneteau,Sense 55,56,Europe,Turkey,376313,2014
-Beneteau ,Oceanis 50,49,Caribbean,Grenada,230000,2014
+Beneteau,Oceanis 50,49,Caribbean,Grenada,230000,2014
 Bestevaer,49ST,49,Europe,Netherlands,807805,2014
 Boreal,44,45,Europe,France,601275,2014
 Catalina,445,44,USA,Florida,299900,2014
@@ -1802,7 +1801,7 @@ Southerly,420,42,Europe,France,559708,2014
 Southerly,535,53,USA,Connecticut,995000,2014
 Sunbeam,42.1,42,Europe,United Kingdom,379710,2014
 Van De Stadt,Stainless Steel Cutter,53,Europe,Malta,473732,2014
-Wauquiez ,Pilot Saloon 47,47,Caribbean,Martinique,461753,2014
+Wauquiez,Pilot Saloon 47,47,Caribbean,Martinique,461753,2014
 X-Yachts,Xp 44,44,Europe,Turkey,516246,2014
 Bavaria,41 Cruiser,40,Europe,Greece,128791,2015
 Bavaria,Cruiser 46,46,Europe,Croatia,280595,2015
@@ -1836,7 +1835,7 @@ Bavaria,56 Cruiser,54,Europe,Greece,285454,2015
 Bavaria,56 Cruiser,54,Europe,Italy,364409,2015
 Bavaria,56 Cruiser,54,Europe,Italy,285454,2015
 Bavaria,56 Cruiser,54,Europe,Spain,334042,2015
-Bavaria ,Cruiser 46,46,Caribbean,British Virgin Islands,198000,2015
+Bavaria,Cruiser 46,46,Caribbean,British Virgin Islands,198000,2015
 Beneteau,Oceanis 38,38,USA,California,210000,2015
 Beneteau,Oceanis 38,38,USA,California,189900,2015
 Beneteau,Oceanis 38,38,Europe,Italy,145801,2015
@@ -1869,9 +1868,9 @@ Beneteau,Oceanis 55,55,Europe,Spain,460370,2015
 Beneteau,Oceanis 55,55,Europe,Spain,455511,2015
 Beneteau,Oceanis 55,55,Europe,Spain,438332,2015
 Beneteau,Oceanis 55,55,Europe,United Kingdom,426342,2015
-Beneteau ,Oceanis 45,45,Caribbean,Antigua and Barbuda,275000,2015
-Beneteau ,Oceanis 45,45,Caribbean,British Virgin Islands,189000,2015
-Beneteau ,Oceanis 45,45,Caribbean,British Virgin Islands,169000,2015
+Beneteau,Oceanis 45,45,Caribbean,Antigua and Barbuda,275000,2015
+Beneteau,Oceanis 45,45,Caribbean,British Virgin Islands,189000,2015
+Beneteau,Oceanis 45,45,Caribbean,British Virgin Islands,169000,2015
 Catalina,385,38,USA,California,249900,2015
 Contest,42CS,45,Europe,Netherlands,637741,2015
 Dehler,Varianta 44,44,Europe,Spain,108108,2015
@@ -1889,7 +1888,7 @@ Dufour,460 GL,46,Europe,Croatia,188326,2015
 Dufour,500 GL,49,Europe,Norway,278177,2015
 Dufour,500,49,Europe,Spain,206385,2015
 Dufour,500,49,Europe,Spain,206377,2015
-Dufour ,500 GL,49,Caribbean,Martinique,297709,2015
+Dufour,500 GL,49,Caribbean,Martinique,297709,2015
 Elan,40 Impression,39,Europe,Croatia,126328,2015
 Elan,Impression 40,39,Europe,Turkey,163984,2015
 Elan,Impression 45,44,Europe,Croatia,176131,2015
@@ -1947,10 +1946,10 @@ Jeanneau,Sun Odyssey 509,50,Europe,Greece,209900,2015
 Jeanneau,53,53,Europe,Italy,370482,2015
 Jeanneau,53,53,Europe,Italy,249023,2015
 Jeanneau,Sun Odyssey 53,53,USA,Washington,389500,2015
-Jeanneau ,Sun Odyssey 469,46,Caribbean,Antigua and Barbuda,182271,2015
-Jeanneau ,Sun Odyssey 469,46,Caribbean,Sint Maarten (Dutch part),295000,2015
-Jeanneau ,Sun Odyssey 509,50,Caribbean,British Virgin Islands,199000,2015
-Jeanneau ,Sun Odyssey 509,50,Caribbean,British Virgin Islands,189000,2015
+Jeanneau,Sun Odyssey 469,46,Caribbean,Antigua and Barbuda,182271,2015
+Jeanneau,Sun Odyssey 469,46,Caribbean,Sint Maarten (Dutch part),295000,2015
+Jeanneau,Sun Odyssey 509,50,Caribbean,British Virgin Islands,199000,2015
+Jeanneau,Sun Odyssey 509,50,Caribbean,British Virgin Islands,189000,2015
 Morris,M42X,42,USA,Maine,795000,2015
 Oyster,475,48,USA,Rhode Island,799000,2015
 Oyster,545,54,Europe,United Kingdom,1259040,2015
@@ -1970,7 +1969,7 @@ Bavaria,51 Cruiser,49,Europe,Croatia,242939,2016
 Bavaria,51 Cruiser,49,Europe,Germany,298815,2016
 Bavaria,51 Cruiser,49,Europe,Italy,224719,2016
 Bavaria,51 Cruiser,49,Europe,Spain,255086,2016
-Bavaria ,Cruiser 46,46,Caribbean,British Virgin Islands,234000,2016
+Bavaria,Cruiser 46,46,Caribbean,British Virgin Islands,234000,2016
 Beneteau,Oceanis 38,38,Caribbean,British Virgin Islands,119000,2016
 Beneteau,Oceanis 38,38,Caribbean,British Virgin Islands,115000,2016
 Beneteau,Oceanis 38,38,USA,California,199000,2016
@@ -1989,9 +1988,9 @@ Beneteau,Oceanis 48,48,Europe,Turkey,340115,2016
 Beneteau,Oceanis 48,48,USA,Virginia,397500,2016
 Beneteau,Oceanis 55,55,Europe,Greece,504099,2016
 Beneteau,Oceanis 55,55,Europe,Turkey,479805,2016
-Beneteau ,Moorings 43.5,44,Caribbean,British Virgin Islands,79000,2016
-Beneteau ,Oceanis 45,45,Caribbean,British Virgin Islands,194000,2016
-Beneteau ,Oceanis 45,45,Caribbean,British Virgin Islands,160000,2016
+Beneteau,Moorings 43.5,44,Caribbean,British Virgin Islands,79000,2016
+Beneteau,Oceanis 45,45,Caribbean,British Virgin Islands,194000,2016
+Beneteau,Oceanis 45,45,Caribbean,British Virgin Islands,160000,2016
 Catalina,445,44,USA,Virginia,329500,2016
 Dehler,42,42,Europe,Germany,255086,2016
 Dehler,42,42,Europe,Germany,241692,2016
@@ -2021,7 +2020,7 @@ Dufour,512 GL,50,Europe,Italy,267233,2016
 Dufour,512 GL,50,Europe,Spain,376556,2016
 Dufour,56 Exclusive,56,Europe,Italy,421500,2016
 Elan,Impression 40,39,Europe,Croatia,151837,2016
-Elan,40 Impression ,39,Europe,Croatia,144586,2016
+Elan,40 Impression,39,Europe,Croatia,144586,2016
 Elan,Impression 40,39,USA,Georgia,275000,2016
 Elan,Impression 45,44,Europe,Croatia,182204,2016
 Elan,45 Impression,44,Europe,Croatia,163984,2016
@@ -2063,8 +2062,8 @@ Jeanneau,Sun Odyssey 519,51,Europe,Greece,363194,2016
 Jeanneau,Sun Odyssey 54 DS,55,Caribbean,Puerto Rico,629000,2016
 Jeanneau,Sun Odyssey 54 DS,55,USA,Rhode Island,600000,2016
 Jeanneau,Sun Odyssey 54 DS,55,USA,Washington,599999,2016
-Jeanneau ,Sun Odyssey 479,46,Caribbean,British Virgin Islands,199000,2016
-Jeanneau ,Sun Odyssey 519,51,Caribbean,British Virgin Islands,259000,2016
+Jeanneau,Sun Odyssey 479,46,Caribbean,British Virgin Islands,199000,2016
+Jeanneau,Sun Odyssey 519,51,Caribbean,British Virgin Islands,259000,2016
 Maxi,1200,40,Europe,Italy,267233,2016
 Moody,54,54,USA,California,919000,2016
 Nautor,Swan ClubSwan 50,50,Europe,Italy,1214531,2016
@@ -2111,8 +2110,8 @@ Beneteau,Oceanis 45,45,Europe,Spain,182251,2017
 Beneteau,Oceanis 45,45,USA,Washington,349000,2017
 Beneteau,Oceanis 48,48,Europe,Croatia,290324,2017
 Beneteau,Oceanis 55,55,Europe,Italy,484664,2017
-Beneteau ,Oceanis 45,45,Caribbean,Martinique,322012,2017
-Beneteau ,Oceanis 48,48,Caribbean,British Virgin Islands,289000,2017
+Beneteau,Oceanis 45,45,Caribbean,Martinique,322012,2017
+Beneteau,Oceanis 48,48,Caribbean,British Virgin Islands,289000,2017
 Boreal,47,47,Europe,France,719100,2017
 B-Yachts,Brenta B42,42,Europe,Spain,546613,2017
 Catalina,425,43,USA,Virginia,315000,2017
@@ -2124,13 +2123,13 @@ Dufour,460 GL,46,Europe,Greece,243001,2017
 Dufour,460 GL,46,Europe,Hungary,364409,2017
 Dufour,460,46,Europe,Italy,264804,2017
 Dufour,460 GL,46,Europe,Spain,291527,2017
-Dufour,512 GL ,50,Europe,Croatia,518432,2017
+Dufour,512 GL,50,Europe,Croatia,518432,2017
 Elan,Impression 40,39,Europe,Croatia,206490,2017
 Elan,40 Impression,39,Europe,Croatia,157668,2017
 Elan,40 E5,39,Europe,Italy,206551,2017
 Elan,45 Impression,44,Europe,Croatia,194108,2017
 Elan,Impression 45,44,Europe,Croatia,176131,2017
-Elan,45 Impression ,44,Europe,Croatia,169865,2017
+Elan,45 Impression,44,Europe,Croatia,169865,2017
 Elan,Impression 45,44,Europe,Slovenia,216216,2017
 Elan,Impression 50,50,Europe,Croatia,273270,2017
 Elan,50,50,Europe,Croatia,270877,2017
@@ -2181,7 +2180,7 @@ Jeanneau,Sun Odyssey 54 DS,55,USA,Maryland,579000,2017
 Jeanneau,Sun Odyssey 54 DS,55,Europe,Spain,501081,2017
 Jeanneau,Sun Odyssey 54 DS,55,Europe,United Kingdom,599687,2017
 Jeanneau,Sun Odyssey 54 DS,55,Europe,United Kingdom,512942,2017
-Jeanneau ,Sun Odyssey 519,51,Caribbean,Grenada,420000,2017
+Jeanneau,Sun Odyssey 519,51,Caribbean,Grenada,420000,2017
 Najad,505,50,Europe,Croatia,761701,2017
 Nautor,Swan 50,50,Europe,France,1311872,2017
 Oyster,475,48,USA,South Carolina,849000,2017
@@ -2216,7 +2215,7 @@ Beneteau,Oceanis 51.1,51,Europe,Italy,479824,2018
 Beneteau,Oceanis 51.1,51,Europe,Italy,394792,2018
 Beneteau,Sense 51,51,Europe,Turkey,655962,2018
 Beneteau,Oceanis 55.1,55,Europe,France,637716,2018
-Beneteau ,Oceanis 48,48,Caribbean,British Virgin Islands,275000,2018
+Beneteau,Oceanis 48,48,Caribbean,British Virgin Islands,275000,2018
 Catalina,445,44,USA,New Jersey,374900,2018
 Dehler,42,42,Europe,Netherlands,361980,2018
 Dehler,46,46,Europe,Netherlands,460370,2018
@@ -2229,7 +2228,7 @@ Dufour,460 GL,46,Europe,Italy,372982,2018
 Dufour,460 GL,46,Europe,Turkey,255086,2018
 Dufour,520,50,Europe,France,498026,2018
 Dufour,520 GL,50,Europe,France,483449,2018
-Dufour, 520 GL Owner Version,50,Europe,Germany,480196,2018
+Dufour,520 GL Owner Version,50,Europe,Germany,480196,2018
 Dufour,520,50,Europe,Greece,388703,2018
 Dufour,520,50,Europe,Italy,338723,2018
 Dufour,520 GL,50,Europe,Malta,425144,2018
