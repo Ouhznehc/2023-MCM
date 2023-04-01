@@ -32,6 +32,9 @@ class regression:
     self.model.fit(self.X, self.y)
 
   def evaluate(self, plot=False):
+    print("leave one out in {} sample(s)".format(len(self.X)))
+    if len(self.X) < 20:
+      return None
     y_pred = pd.Series([], dtype='float64')
     for i in range(len(self.X)):
       self.reset()
@@ -46,6 +49,6 @@ class regression:
     pred_frame = pd.concat([y_pred.apply(lambda x : math.exp(x)), self.y.apply(lambda x : math.exp(x))], axis='columns')
     residual = pred_frame.apply((lambda x : (x.iloc[0] - x.iloc[1]) * 100 / x.iloc[1]), axis="columns")
     residual.index = range(len(residual.index))
-    residual.plot()
+    # residual.plot()
     print("Square root of Evaluated MSE:", math.sqrt(mean_squared_error(self.y.apply(lambda x : math.exp(x)), y_pred.apply(lambda x : math.exp(x)))))
     return residual
