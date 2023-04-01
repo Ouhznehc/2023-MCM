@@ -1,0 +1,14 @@
+21 29 repeat
+30 31 repeat
+24 32 repeat
+83 84 repeat
+110 111 repeat
+119 120 repeat
+265 266 repeat
+268 269 repeat
+270 272 repeat
+290 291 repeat
+308 309 repeat
+333 334 repeat
+345 347 repeat
+301 fault 314 right
