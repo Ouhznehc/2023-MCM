@@ -6,9 +6,10 @@
 % 请在以下的方括号中填写队伍控制号
 \usepackage[2332102]{easymcm}  % 载入 EasyMCM 模板文件
 \problem{Y}  % 请在此处填写题号
-\usepackage{mathptmx}  % 这是 Times 字体，中规中矩 
+%\usepackage{mathptmx}  % 这是 Times 字体，中规中矩 
 %\usepackage{mathpazo}  % 这是 COMAP 官方杂志采用的更好看的 Palatino 字体，可替代以上的 mathptmx 宏包
-
+\usepackage{newtxtext}
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}} 
 \title{Title}  % 标题
 
 % 如需要修改题头（默认为 MCM/ICM），请使用以下命令（此处修改为 MCM）
@@ -19,8 +20,9 @@
 
 % 此处填写摘要内容
 \begin{abstract}
-    introduce the background.
-    This paper aims to \dots
+    Sailboats fulfill diverse roles, fueling a thriving secondary market. Brokers, facing numerous complex factors, struggle to determine reasonable pricing. A tool to assist in comprehensive evaluations and rational pricing for used boats is urgently needed.
+    
+    This paper aims to construct a reliable model based on existing datasets, which can provide a reasonable explanation for the pricing of the second-hand sailboat market. It also analyzes the impact of different factors and indicators on prices. Finally, the model will be applied to the second-hand sailboat market in Hong Kong to provide a reasonable and accurate pricing rule.
 
     For Problem(a), \dots
 
@@ -52,37 +54,72 @@ After that, a memo is attached.
 
 % 正文开始
 \section{Introduction}
-\subsection{Problem Background}
-Here is the problem background ...
+% 问题背景
+\subsection{Background}
+In our daily lives, sailboats are not only a means of transportation, but also serve as leisure and entertainment, and even for competitive sports. As a result, the growing demand for sailboats has given rise to a thriving boat market, which has gradually developed into a secondary market. In the secondary market, buyers and sellers usually trade through brokers, who play a crucial role in the transaction process.
 
-Two major problems are discussed in this paper, which are:
+For brokers, it is essential to be familiar with the used sailboat market, comprehensively consider various factors, and make reasonable pricing for the used sailboats in order to facilitate a successful transaction. However, the factors affecting the price of used sailboats are numerous and complex, with different brands, variants of boats, years, depreciation rates, as well as local consumption levels and geographical environments having significant impacts. The intertwined influences of these complex factors make it difficult to determine the pricing in the used sailboat market, and it is challenging to come up with a reasonable price that takes all factors into account.
+
+Therefore, brokers urgently need a tool to assist them in making more reasonable and comprehensive evaluations of used sailboats, and to make the pricing in the used sailboat market more rational.
+%问题重述
+\subsection{Problem Restatement}
+\textbf{Problem (a) :}
 \begin{itemize}
-    \item Doing the first thing.
-    \item Doing the second thing.
+    \item Develop a prediction model to explain the listing price of each of the sailboats in the provided spreadsheet.
+    \item Discuss the precision of our estimate for each sailboat variant's price.
 \end{itemize}
 
-\subsection{Literature Review}
-A literatrue\cite{1} say something about this problem ...
+\textbf{Problem (b) :}
+\begin{itemize}
+    \item Determine whether region has an impact on the price of second-hand boats and explain the effect.
+    \item Discuss whether any regional effect is consistent across all sailboat variants.
+    \item Address the practical and statistical significance of any regional effects noted.
+\end{itemize}
 
-\subsection{Our work}
+\textbf{Problem (c) :}
+\begin{itemize}
+    \item Based on the model, find out how it can be useful in the Hong Kong market.
+    \item Choose one subset and model the regional effect of Hong Kong on each sailboat prices.
+    \item Assess whether  the effect is the same for both catamarans and monohull sailboats.
+\end{itemize}
+
+\textbf{Problem (d) :}
+\begin{itemize}
+    \item Identify and discuss additional informative conclusions drawn from the data.
+\end{itemize}
+
+\textbf{Problem (e) :}
+\begin{itemize}
+    \item Create a one-to two-page report with well-chosen graphics to assist the Hong Kong sailboat broker to understand your findings.
+\end{itemize}
+%我们的工作
+\subsection{Our work \& Model Overview}
 We do such things ...
+
+
 
 \begin{enumerate}[\bfseries 1.]
     \item We do ...
     \item We do ...
     \item We do ...
 \end{enumerate}
-
-\section{Preparation of the Models}
+\section{Assumptions and Justififications}
+% 问题假设
 \subsection{Assumptions}
-
+To simplify our problems, we make the following basic assumptions, each of which is
+adequately justified.
+\begin{itemize}
+    \item The price of used sailboats is solely determined by the factors in the dataset.
+    \item The factors in the dataset are independent and unrelated.
+    \item The data in the dataset are all real, reasonable, and follow a certain pattern.
+    \item The pricing required by a broker should be reasonable and in accordance with market rules, rather than false pricing.
+\end{itemize}
+%符号含义
 \subsection{Notations}
-The primary notations used in this paper are listed in Table \ref{tb:notation}.
-
+\ 
 % 三线表示例
 \begin{table}[!htbp]
 \begin{center}
-\caption{Notations}
 \begin{tabular}{cl}
 	\toprule
 	\multicolumn{1}{m{3cm}}{\centering Symbol}
@@ -92,88 +129,45 @@ The primary notations used in this paper are listed in Table \ref{tb:notation}.
 	$b$&the second one\\
 	$\alpha$ &the last one\\
 	\bottomrule
-\end{tabular}\label{tb:notation}
+\end{tabular}
 \end{center}
 \end{table}
+\section{Data Exploration}
+\subsection{Data Cleaning}
+First of all, we turn the \textbf{\texttt{xlsx}} format data sheet into \textbf{\texttt{csv}} format. 
+The conversion causes some minor errors like extra spaces and unexcepted characters which can be easily filtered out by text editor and python string operating functions like \textbf{\texttt{strip()}} or so.
 
-\section{The Models}
-\subsection{Model 1}
-\subsubsection{Details about Model 1}
-The detail can be described by equation \eqref{eq:heat}:
-\begin{equation}\label{eq:heat}
-\frac{\partial u}{\partial t} - a^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} \right) = f(x, y, z, t)
-\end{equation}
+Secondly, we use \textbf{Linear interpolation} to fill in the missing data and then apply \textbf{Adaptive Density-Based Clustering} for spell correction,
+resulting in a more complete and accurate dataset than the original.
 
-\subsection{Model 2}
-\subsubsection{Conclusion of Model 2}
-The results are shown in Figure \ref{fig:result}, where $t$ denotes the time in seconds, and $c$ refers to the concentration of water in the boiler.
-
+Finally, we merge the corrected dataset with the accurate one after making necessary modifications.
 \begin{figure}[htbp]
-\centering
-\includegraphics[width=.8\textwidth]{water.png}
-\caption{The result of Model 2}\label{fig:result}
-\end{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{error_data.png}
+    \caption{Examples of error data}\label{fig:error_data}
+    \end{figure}
 
-\clearpage
-\subsubsection{Commentary on Model 2}
-The instance of long and wide tables are shown in Table \ref{tb:longtable}.
+\subsection{Data Augmentation}
+We collect and organize more additional features of a given sailboat(such as \textbf{beam}, \textbf{draft}, \textbf{displacement}, \textbf{cabins}, etc.),
+and the \textbf{2020 per capita GDP data} of the relevant regions, 
+greatly enriching the diversity of the data and expanding the dataset size. 
+These efforts lay a solid foundation for subsequent modeling.
+\subsection{Data Analysis}
 
-% 长表格示例，更多用法请参考 longtable 宏包文档
-% 以下环境及对应参数可实现表格内的自动换行与表格的自动断页
-% 您也可以选择自行载入 tabularx 宏包，并通过 X 参数指定对应列自动换行
-\begin{longtable}{ p{4em} p{14em} p{14em} }
-\caption{Basic Information about Three Main Continents (scratched from Wikipedia)}
-\label{tb:longtable}\\
-\toprule
-Continent & Description & Information \\
-\midrule
-Africa & Africa Continent is surrounded by the Mediterranean Sea to the
-north, the Isthmus of Suez and the Red Sea to the northeast, the Indian
-Ocean to the southeast and the Atlantic Ocean to the west. &
-At about 30.3 million km$^2$ including adjacent islands, it covers 6\%
-of Earth's total surface area and 20\% of its land area. With 1.3
-billion people as of 2018, it accounts for about 16\% of the world's
-human population. \\
-\midrule
-Asia & Asia is Earth's largest and most populous continent which
-located primarily in the Eastern and Northern Hemispheres.
-It shares the continental landmass of Eurasia with the continent
-of Europe and the continental landmass of Afro-Eurasia with both
-Europe and Africa. &
-Asia covers an area of 44,579,000 square kilometres, about 30\%
-of Earth's total land area and 8.7\% of the Earth's total surface
-area. Its 4.5 billion people (as of June 2019) constitute roughly
-60\% of the world's population. \\
-\midrule
-Europe & Europe is a continent located entirely in the Northern
-Hemisphere and mostly in the Eastern Hemisphere. It comprises the
-westernmost part of Eurasia and is bordered by the Arctic Ocean to
-the north, the Atlantic Ocean to the west, the Mediterranean Sea to
-the south, and Asia to the east. &
-Europe covers about 10,180,000 km$^2$, or 2\% of the Earth's surface
-(6.8\% of land area), making it the second smallest
-continent. Europe had a total population of about 741 million (about
-11\% of the world population) as of 2018. \\
-\bottomrule
-\end{longtable}
 
-Figure \ref{fig:subfigures} gives an example of subfigures. Figure \ref{subfig:left} is on the left, and Figure \ref{subfig:right} is on the right.
+\section{The Prediction Model of Used Sailboat Prices}
+\subsection{The Establishment of The Model}
+\subsection{Model Validation}
+\subsection{Model Accuracy Analysis}
 
-% 子图（多图并列）示例，更多用法请参考 subfigure 宏包文档
-% 如果您只希望几张图并列，不需要额外的 caption，那么在 figure 环境中
-% 连续插入总宽度不超过 \textwidth 的多个 \includegraphics 命令即可
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{.4\textwidth}
-\includegraphics[width=\textwidth]{water.png}
-\caption{Image on the left}\label{subfig:left}
-\end{subfigure}
-\begin{subfigure}[b]{.4\textwidth}
-\includegraphics[width=\textwidth]{water.png}
-\caption{Image on the right}\label{subfig:right}
-\end{subfigure}
-\caption{Two images}\label{fig:subfigures}
-\end{figure}
+
+\section{Regional Effect Analysis}
+
+\section{The applicability of The Prediction Model in Hong Kong}
+
+\section{Extended Inferences or Conclusion}
+
+\section{Further Improvements}
 
 \section{Strengths and Weaknesses}
 \subsection{Strengths}
@@ -187,11 +181,13 @@ Figure \ref{fig:subfigures} gives an example of subfigures. Figure \ref{subfig:l
     \item Only one ...
  \end{itemize}
 
+\section{Conclusion}
+
 
 % 以下为信件/备忘录部分，不需要可自行去掉
 % 如有需要可将整个 letter 环境移动到文章开头或中间
 % 请在第二个花括号内填写标题，如「信件」（Letter）或「备忘录」（Memorandum）
-\begin{letter}{\centerline{Memorandum}}
+\begin{letter}{Report}
 \noindent\rule[0.25\baselineskip]{\textwidth}{2pt} 
 \begin{flushleft}  % 左对齐环境，无首行缩进
 \textbf{To:} Heishan Yan\\
