@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  1 APR 2023 22:30
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  2 APR 2023 11:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/melody/Desktop/2023-MCM/Template/easymcm-v5.2.2/PAPER
-(/Users/melody/Desktop/2023-MCM/Template/easymcm-v5.2.2/PAPER.tex
+**/Users/melody/Desktop/2023-MCM/Paper/PAPER
+(/Users/melody/Desktop/2023-MCM/Paper/PAPER.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -578,12 +578,17 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+
+Overfull \hbox (18.60004pt too wide) in paragraph at lines 17--17
+ [] [][][][][] []  
+ []
+
 )
 \tf@toc=\write5
 \openout5 = `PAPER.toc'.
 
  [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 48.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 60.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3
@@ -592,17 +597,17 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 File: ./img//water.png Graphic file (type bmp)
 <./img//water.png>
  [4]
-Underfull \hbox (badness 2150) in paragraph at lines 126--130
+Underfull \hbox (badness 2150) in paragraph at lines 138--142
 \T1/ptm/m/n/12 con-ti-nen-tal land-mass of Eura-sia
  []
 
 
-Underfull \hbox (badness 4353) in paragraph at lines 126--130
+Underfull \hbox (badness 4353) in paragraph at lines 138--142
 \T1/ptm/m/n/12 Eurasia with both Eu-rope and
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 141--145
+Underfull \hbox (badness 1303) in paragraph at lines 153--157
 []|\T1/ptm/m/n/12 Europe cov-ers about 10,180,000
  []
 
@@ -613,23 +618,39 @@ File: ./img//water.png Graphic file (type bmp)
 [5
 
 ] [6]
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 205.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/t1txtt.fd
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hsize' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 194.
+
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 218.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 ) [7
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 213.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 226.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 213.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 226.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10.95> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 230.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 243.
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10.95> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 231.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 244.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -644,15 +665,15 @@ AED: lastpage setting LastPage
 
 ] (./PAPER.aux)
 Package rerunfilecheck Info: File `PAPER.out' has not changed.
-(rerunfilecheck)             Checksum: 40275FB59DBBD1F0AA3F238482AF61C9;3060.
+(rerunfilecheck)             Checksum: 15ABDCC351661631EA093846859257FC;3075.
  ) 
 Here is how much of TeX's memory you used:
  15538 strings out of 476179
- 244904 string characters out of 5809544
- 737480 words of memory out of 5000000
+ 244850 string characters out of 5809544
+ 738692 words of memory out of 5000000
  36044 multiletter control sequences out of 15000+600000
  513303 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 75i,12n,78p,395b,1611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,78p,377b,1611s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on PAPER.pdf (8 pages).
