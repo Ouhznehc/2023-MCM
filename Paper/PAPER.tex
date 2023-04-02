@@ -20,9 +20,14 @@
 
 % 此处填写摘要内容
 \begin{abstract}
-    Sailboats fulfill diverse roles, fueling a thriving secondary market. Brokers, facing numerous complex factors, struggle to determine reasonable pricing. A tool to assist in comprehensive evaluations and rational pricing for used boats is urgently needed.
+    Sailboats fulfill diverse roles, fueling a thriving secondary market. 
+    Brokers, facing numerous complex factors, struggle to determine reasonable pricing. 
+    A tool to assist in comprehensive evaluations and rational pricing for used boats is urgently needed.
     
-    This paper aims to construct a reliable model based on existing datasets, which can provide a reasonable explanation for the pricing of the second-hand sailboat market. It also analyzes the impact of different factors and indicators on prices. Finally, the model will be applied to the second-hand sailboat market in Hong Kong to provide a reasonable and accurate pricing rule.
+    This paper aims to construct a reliable model based on existing datasets, 
+    which can provide a reasonable explanation for the pricing of the second-hand sailboat market. 
+    It also analyzes the impact of different factors and indicators on prices. 
+    Finally, the model will be applied to the second-hand sailboat market in Hong Kong to provide a reasonable and accurate pricing rule.
 
     For Problem(a), \dots
 
@@ -44,7 +49,8 @@ After that, a report is attached.
     % 美赛论文中无需注明关键字。若您一定要使用，
     % 请将以下两行的注释号 '%' 去除，以使其生效
     \vspace{5pt}
-    \textbf{Keywords}: heuristic hierarchical multiple regression, deep forest.
+    \textbf{Keywords}:  Linear interpolation, Adaptive Density-Based Clustering, Heuristic Hierarchical Multiple Regression, Deep Forest Model,  Machine Learning, Data Mining, Analysis of Variance.
+ 
 
 \end{abstract}
 
@@ -96,21 +102,12 @@ Therefore, brokers urgently need a tool to assist them in making more reasonable
 \subsection{Our work \& Model Overview}
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{Model.png}
-    \caption{Model Framework}\label{fig:Model}
+    \includegraphics[width=1\textwidth]{OurWork.png}
+    \caption{Model Framework}\label{fig:OurWork}
 \end{figure}
 
-We propose a model framework as shown in Figure \ref{fig:Model}, The model takes \texttt{Year}, \texttt{Region}, \texttt{Variant} as inputs, 
-, \texttt{Price} as output, and performs a heuristic hierarchical multiple regression. 
-Specifically, in each regression layer, one variable is denormalized, and the other two variables are normalized. 
-The obtained \texttt{Price} at this time is used as the Effect of this variable. 
-At the same time, the fitting result is used as the baseline for normalization in the next layer and is involved in the regression. 
-This process is iterated continuously until the model trains a precise fitting effect.
 
-It is worth noting that we use a heuristic approach for each normalization. 
-For larger datasets, we perform regression, while for smaller datasets, we take their average. 
-This method greatly improves the accuracy of the model predictions.
-\section{Assumptions and Justififications}
+\section{Assumptions and Justifications}
 % 问题假设
 \subsection{Assumptions}
 To simplify our problems, we make the following basic assumptions, each of which is
@@ -162,19 +159,118 @@ Finally, we merge the corrected dataset with the accurate one after making neces
     \caption{Examples of error data}\label{fig:error_data}
 \end{figure}
 
-\subsection{Data Analysis}
-
 \subsection{Data Augmentation}
 We collect and organize more additional features of a given sailboat(such as \textbf{beam}, \textbf{draft}, \textbf{displacement}, \textbf{cabins}, etc.),
 and the \textbf{2020 per capita GDP data} of the relevant regions, 
 greatly enriching the diversity of the data and expanding the dataset size. 
 These efforts lay a solid foundation for subsequent modeling.
 
+\subsection{Data Analysis}
+There are lots of labels related to specifications, 
+and it is hard for us to discuss their influence on listing price one by one. 
+However, trying to directly preform regression based on these labels by machine learning models can cause \textbf{overfitting issues}.
+Nevertheless, we can still draw some relatively simple conclusions from the data, which provide theoretical support for our subsequent modeling:
+\begin{itemize}
+    \item Time: Time is a quasi-continuous and ordered variable, 
+    and the price has an obvious linear relationship with time.(see Figure \ref{fig:year_price} and Table \ref{table: correlation_coefficient})
+    \item Variant and Region: They are obviously related to the price, but due to their unordered and non-continuous nature, further analysis is needed.
+\end{itemize}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{monohulled_price_year.png}
+    \caption{Monohulled}\label{subfig:mono_year}
+    \end{subfigure}
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{catamaran_price_year.png}
+    \caption{Catamaran}\label{subfig:cata_year}
+    \end{subfigure}
+    \caption{The relationship between year and price}\label{fig:year_price}
+\end{figure} 
+
+\begin{table}[h!]
+    \begin{center}
+      \begin{tabular}{c|c|c|c}
+        & Pearson & Spearman & Kendall\\
+        \hline
+        \hline
+        Monohulled &0.964 & 0.989 & 0.943 \\
+        Catamaran  &0.960& 0.971 & 0.867\\
+      \end{tabular}
+      \caption{The correlation coefficient of year and price}\label{table: correlation_coefficient}
+    \end{center}
+\end{table}
+
+
 \section{The Prediction Model of Used Sailboat Prices}
+
 \subsection{The Establishment of The Model}
+\subsubsection{Model 1 \textemdash  Heuristic Hierarchical Multiple Regression}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Model1.png}
+    \caption{Brief process of Model 1}\label{fig:Model1}
+\end{figure}
+We propose \emph{Model 1} as shown in Figure \ref{fig:Model1}, The model takes \texttt{Year}, \texttt{Region}, \texttt{Variant} as inputs, 
+, \texttt{Price} as output, and performs a heuristic hierarchical multiple regression. 
+Specifically, in each regression layer, one variable is denormalized, and the other two variables are normalized. 
+The obtained \texttt{Price} at this time is used as the Effect of this variable. 
+At the same time, the fitting result is used as the baseline for normalization in the next layer and is involved in the regression. 
+This process is iterated continuously until the model trains a precise fitting effect.
+
+It is worth noting that we use a heuristic approach for each normalization. 
+For larger datasets, we perform regression, while for smaller datasets, we take their average. 
+This method greatly improves the accuracy of the model predictions.
+\subsubsection{Model 2 \textemdash  Deep Forest Model}
+However, \emph{Model 1} is somehow incomplete because \emph{Model 1} requires that the variant and region of the predicted data have appeared in the dataset before. 
+However, in actual prediction, the variant and region may be opaque to the model. 
+Taking the third question as an example, \emph{Model 1} can't predict the price of Hong Kong because the region effect of Hong Kong hasn't been evaluated by the model. 
+Therefore, we use the \textbf{Deep Forest Model} to establish \emph{Model 2}.
+
+Decision tree is a common machine learning method with two models: classification and regression. 
+At the beginning, we used the basic decision tree for regression, but the model error was large, 
+and the accuracy for price prediction was poor. 
+Therefore, we optimized the model using the deep forest algorithm. 
+Deep forest is an ensemble learning model based on random forest. 
+Unlike traditional decision trees, deep forest trains each tree classifier with a randomized strategy to increase the diversity of the model.
+Compared with a single decision tree, the deep forest model is more robust. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Deep_forest.png}
+    \caption{Deep Forest Model}\label{fig:DF}
+\end{figure}
+
+
+As for \emph{Model 2}, we first expanded the dataset to obtain quantified data for regions and variants.
+Specifically, for variants, we expanded data such as \texttt{draft}, \texttt{beam}, \texttt{water tank}, \texttt{fuel tank}, \texttt{cabins}, \texttt{displacement}, etc. 
+For regions, we expanded data such as \texttt{GDP}, \texttt{Gini coefficient}, \texttt{Human Development Index}, etc. 
+When dealing with unmarked variants and regions, we first used \emph{Model 1} to obtain the effects of marked variants and regions, and then applied the effects of marked variants and regions to the deep forest. 
+By expanding the data for regression, we obtained the effects of unmarked variants and regions, and thus predicted the price.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Model2.png}
+    \caption{Brief process of Model 2}\label{fig:Model2}
+\end{figure}
+
 
 \subsection{Model Validation}
+
 \subsection{Model Accuracy Analysis}
+Due to the limited data provided for some sailship types, 
+they belong to imbalanced datasets. 
+Therefore, we need to use as much data as possible for training to prevent the loss of small-sample data during training. 
+Given that the leave-one-out method is not affected by random partition, 
+it is effective for small-sample and imbalanced datasets, 
+and can accurately evaluate the performance of the model, 
+we used the \textbf{leave-one-out method} to analyze the model's error in the error analysis part, 
+and adopted mean squared error as the performance measure of the model.
+
+Given a set of examples in a prediction task $D=\{(\textbf{x}_1,y_1),(\textbf{x}_2,y_2) ,\cdots,(\textbf{x}_m,y_m)  \}$, 
+In which $y_i$ represents the true label of sample $\textbf{x}_i$, 
+and mean squared error is represented as:
+$$E(f;D)=\frac{1}{m}\sum_{i=1}^{m}(f(\textbf{x}_i)-y_i)^2$$
 
 
 \section{Regional Effect Analysis}
