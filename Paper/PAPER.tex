@@ -36,7 +36,7 @@
 
     At the very last, we analyze the strengths and weaknesses of our model as well as its
 sensitivity, whose results show that our model has high robustness, precision and accuracy.
-After that, a memo is attached.
+After that, a report is attached.
 
 
 
@@ -44,7 +44,7 @@ After that, a memo is attached.
     % 美赛论文中无需注明关键字。若您一定要使用，
     % 请将以下两行的注释号 '%' 去除，以使其生效
     \vspace{5pt}
-    \textbf{Keywords}: TODO.
+    \textbf{Keywords}: heuristic hierarchical multiple regression, deep forest.
 
 \end{abstract}
 
@@ -94,15 +94,22 @@ Therefore, brokers urgently need a tool to assist them in making more reasonable
 \end{itemize}
 %我们的工作
 \subsection{Our work \& Model Overview}
-We do such things ...
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Model.png}
+    \caption{Model Framework}\label{fig:Model}
+\end{figure}
 
+We propose a model framework as shown in Figure \ref{fig:Model}, The model takes \texttt{Year}, \texttt{Region}, \texttt{Variant} as inputs, 
+, \texttt{Price} as output, and performs a heuristic hierarchical multiple regression. 
+Specifically, in each regression layer, one variable is denormalized, and the other two variables are normalized. 
+The obtained \texttt{Price} at this time is used as the Effect of this variable. 
+At the same time, the fitting result is used as the baseline for normalization in the next layer and is involved in the regression. 
+This process is iterated continuously until the model trains a precise fitting effect.
 
-
-\begin{enumerate}[\bfseries 1.]
-    \item We do ...
-    \item We do ...
-    \item We do ...
-\end{enumerate}
+It is worth noting that we use a heuristic approach for each normalization. 
+For larger datasets, we perform regression, while for smaller datasets, we take their average. 
+This method greatly improves the accuracy of the model predictions.
 \section{Assumptions and Justififications}
 % 问题假设
 \subsection{Assumptions}
@@ -133,6 +140,12 @@ adequately justified.
 \end{center}
 \end{table}
 \section{Data Exploration}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Data.png}
+    \caption{Data Exploration}\label{fig:Data}
+\end{figure}
+
 \subsection{Data Cleaning}
 First of all, we turn the \textbf{\texttt{xlsx}} format data sheet into \textbf{\texttt{csv}} format. 
 The conversion causes some minor errors like extra spaces and unexcepted characters which can be easily filtered out by text editor and python string operating functions like \textbf{\texttt{strip()}} or so.
@@ -140,23 +153,26 @@ The conversion causes some minor errors like extra spaces and unexcepted charact
 Secondly, we use \textbf{Linear interpolation} to fill in the missing data and then apply \textbf{Adaptive Density-Based Clustering} for spell correction,
 resulting in a more complete and accurate dataset than the original.
 
+Further more, we merge \textbf{Make} and \textbf{Variant} into a single feature, which we refer to as \textbf{Variant}.
+
 Finally, we merge the corrected dataset with the accurate one after making necessary modifications.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{error_data.png}
     \caption{Examples of error data}\label{fig:error_data}
-    \end{figure}
+\end{figure}
+
+\subsection{Data Analysis}
 
 \subsection{Data Augmentation}
 We collect and organize more additional features of a given sailboat(such as \textbf{beam}, \textbf{draft}, \textbf{displacement}, \textbf{cabins}, etc.),
 and the \textbf{2020 per capita GDP data} of the relevant regions, 
 greatly enriching the diversity of the data and expanding the dataset size. 
 These efforts lay a solid foundation for subsequent modeling.
-\subsection{Data Analysis}
-
 
 \section{The Prediction Model of Used Sailboat Prices}
 \subsection{The Establishment of The Model}
+
 \subsection{Model Validation}
 \subsection{Model Accuracy Analysis}
 

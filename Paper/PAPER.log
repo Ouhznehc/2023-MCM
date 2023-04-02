@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  2 APR 2023 18:29
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  2 APR 2023 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -782,29 +782,34 @@ Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tn
  [3
 
 ]
+File: ./img//Model.png Graphic file (type bmp)
+<./img//Model.png>
+Requested font "[lmmono12-regular]:" at 12.0pt
+ -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf
+ [4]
+File: ./img//Data.png Graphic file (type bmp)
+<./img//Data.png>
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 137.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 150.
 Requested font "[lmmonolt10-bold]:" at 12.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf
- [4]
+ [5]
 File: ./img//error_data.png Graphic file (type bmp)
 <./img//error_data.png>
- [5] [6]
+ [6] [7]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 213.
+(Font)              scaled to size 12.0pt on input line 229.
 Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Italic.otf
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 214.
+(Font)              scaled to size 8.0pt on input line 230.
 Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 8.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Italic.otf
-Requested font "[lmmono12-regular]:" at 12.0pt
- -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf
- [7
+ [8
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 222.
+(Font)              scaled to size 10.0pt on input line 238.
 Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Regular.otf
 Requested font "cmmi12" at 17.28pt
@@ -827,11 +832,11 @@ Requested font "cmr17" at 17.28pt
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 239.
+(Font)              scaled to size 10.95pt on input line 255.
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.95pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 239.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 255.
 Requested font "[lmmonolt10-bold]:" at 10.95pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf
 Requested font "[lmmono10-regular]:" at 10.95pt
@@ -848,19 +853,19 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ) 
 AED: lastpage setting LastPage
-[8
+[9
 
 ] (./PAPER.aux)
 Package rerunfilecheck Info: File `PAPER.out' has not changed.
-(rerunfilecheck)             Checksum: D3E62F1A5C10661FF457AAC3F8A77579;4708.
+(rerunfilecheck)             Checksum: 2039AD8A45A57A64C7406469C414AE74;4708.
  ) 
 Here is how much of TeX's memory you used:
- 18484 strings out of 476179
- 345535 string characters out of 5809544
- 893629 words of memory out of 5000000
- 38914 multiletter control sequences out of 15000+600000
+ 18504 strings out of 476179
+ 345901 string characters out of 5809544
+ 893840 words of memory out of 5000000
+ 38932 multiletter control sequences out of 15000+600000
  479457 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,11n,99p,746b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,12n,99p,746b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PAPER.pdf (8 pages).
+Output written on PAPER.pdf (9 pages).
