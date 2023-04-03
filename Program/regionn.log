@@ -1,0 +1,54 @@
+The average inpurity in ['Variant', 'CRS'] of the sample after normalization is 50135.38
+The median inpurity in ['Variant', 'CRS'] of the sample after normalization is 54240.88
+Inpurity rate (mean): 13.18%
+Inpurity rate (max): 36.22%
+The average inpurity in ['Year'] of the sample after normalization is 137901.45
+The median inpurity in ['Year'] of the sample after normalization is 117666.04
+Inpurity rate (mean): 60.11%
+Inpurity rate (max): 59.48%
+The average inpurity in ['CRS'] of the sample after normalization is 140622.87
+The median inpurity in ['CRS'] of the sample after normalization is 89987.92
+Inpurity rate (mean): 60.98%
+Inpurity rate (max): 49.79%
+The average inpurity in ['Variant'] of the sample after normalization is 56549.35
+The median inpurity in ['Variant'] of the sample after normalization is 52494.89
+Inpurity rate (mean): 22.58%
+Inpurity rate (max): 33.53%
+Normalizing year
+Corr (pearson): 0.964
+Corr (spearman): 0.989
+Corr (kendall): 0.943
+[ 1.33159797e+04 -2.65442565e+07]
+The average inpurity in ['Variant', 'CRS'] of the sample after normalization is 34721.77
+The median inpurity in ['Variant', 'CRS'] of the sample after normalization is 23167.04
+Inpurity rate (mean): 9.42%
+Inpurity rate (max): 16.62%
+The average inpurity in ['Year'] of the sample after normalization is 129115.56
+The median inpurity in ['Year'] of the sample after normalization is 143647.98
+Inpurity rate (mean): 58.10%
+Inpurity rate (max): 59.48%
+The average inpurity in ['CRS'] of the sample after normalization is 119313.75
+The median inpurity in ['CRS'] of the sample after normalization is 74777.04
+Inpurity rate (mean): 53.41%
+Inpurity rate (max): 45.53%
+The average inpurity in ['Variant'] of the sample after normalization is 42905.21
+The median inpurity in ['Variant'] of the sample after normalization is 23361.53
+Inpurity rate (mean): 17.68%
+Inpurity rate (max): 15.73%
+Normalizing variant
+The average inpurity in ['Variant', 'CRS'] of the sample after normalization is 22923.69
+The median inpurity in ['Variant', 'CRS'] of the sample after normalization is 23167.04
+Inpurity rate (mean): 9.31%
+Inpurity rate (max): 16.62%
+The average inpurity in ['Year'] of the sample after normalization is 26163.16
+The median inpurity in ['Year'] of the sample after normalization is 24174.09
+Inpurity rate (mean): 17.61%
+Inpurity rate (max): 16.23%
+The average inpurity in ['CRS'] of the sample after normalization is 24284.79
+The median inpurity in ['CRS'] of the sample after normalization is 25598.61
+Inpurity rate (mean): 16.26%
+Inpurity rate (max): 18.73%
+The average inpurity in ['Variant'] of the sample after normalization is 29177.14
+The median inpurity in ['Variant'] of the sample after normalization is 23361.53
+Inpurity rate (mean): 17.99%
+Inpurity rate (max): 15.73%

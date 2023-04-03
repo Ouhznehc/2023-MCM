@@ -1,0 +1,227 @@
+---monohulled
+Normalizing year
+Corr (pearson): 0.964
+Corr (spearman): 0.989
+Corr (kendall): 0.943
+p: 0.000000008, significant
+[ 1.33159797e+04 -2.65442565e+07]
+Normalizing variant
+Testing sqrt of MSE: 37485.615, R^2: 0.936, MAPE: 12.32%
+Normalizing year
+Corr (pearson): 0.975
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000001, significant
+[ 9.03294052e+03 -1.80107283e+07]
+Normalizing variant
+Testing sqrt of MSE: 35975.863, R^2: 0.941, MAPE: 11.74%
+Normalizing year
+Corr (pearson): 0.972
+Corr (spearman): 1.000
+Corr (kendall): 1.000
+p: 0.000000002, significant
+[ 9.18034291e+03 -1.83073105e+07]
+Normalizing variant
+Testing sqrt of MSE: 35773.386, R^2: 0.941, MAPE: 11.66%
+Normalizing year
+Corr (pearson): 0.969
+Corr (spearman): 1.000
+Corr (kendall): 1.000
+p: 0.000000003, significant
+[ 9.28994481e+03 -1.85278282e+07]
+Normalizing variant
+Testing sqrt of MSE: 35730.075, R^2: 0.942, MAPE: 11.65%
+Normalizing year
+Corr (pearson): 0.967
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000004, significant
+[ 9.37477257e+03 -1.86985105e+07]
+Normalizing variant
+Testing sqrt of MSE: 35718.891, R^2: 0.942, MAPE: 11.65%
+Normalizing year
+Corr (pearson): 0.966
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000005, significant
+[ 9.44266782e+03 -1.88351168e+07]
+Normalizing variant
+Testing sqrt of MSE: 35715.491, R^2: 0.942, MAPE: 11.65%
+Normalizing year
+Corr (pearson): 0.965
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000006, significant
+[ 9.49806971e+03 -1.89465744e+07]
+Normalizing variant
+Testing sqrt of MSE: 35714.131, R^2: 0.942, MAPE: 11.66%
+[2023-04-03 15:59:14.003] Start to fit the model:
+[2023-04-03 15:59:14.003] Fitting cascade layer = 0 
+[2023-04-03 15:59:14.635] layer = 0  | Val MSE = 0.02818 | Elapsed = 0.632 s
+[2023-04-03 15:59:14.638] Fitting cascade layer = 1 
+[2023-04-03 15:59:15.495] layer = 1  | Val MSE = 0.02668 | Elapsed = 0.858 s
+[2023-04-03 15:59:15.498] Fitting cascade layer = 2 
+[2023-04-03 15:59:16.366] layer = 2  | Val MSE = 0.02741 | Elapsed = 0.868 s
+[2023-04-03 15:59:16.366] Early stopping counter: 1 out of 2
+[2023-04-03 15:59:16.368] Fitting cascade layer = 3 
+[2023-04-03 15:59:17.225] layer = 3  | Val MSE = 0.02740 | Elapsed = 0.857 s
+[2023-04-03 15:59:17.225] Early stopping counter: 2 out of 2
+[2023-04-03 15:59:17.225] Handling early stopping
+[2023-04-03 15:59:17.226] The optimal number of layers: 2
+[2023-04-03 15:59:17.229] Start to evalute the model:
+[2023-04-03 15:59:17.229] Evaluating cascade layer = 0 
+[2023-04-03 15:59:17.333] Evaluating cascade layer = 1 
+Testing sqrt of MSE: 24008.863, R^2: 0.974, MAPE: 7.34%
+---catamarans
+Normalizing year
+Corr (pearson): 0.960
+Corr (spearman): 0.971
+Corr (kendall): 0.867
+p: 0.000000015, significant
+[ 2.23430421e+04 -4.45294384e+07]
+Normalizing variant
+Testing sqrt of MSE: 65041.615, R^2: 0.896, MAPE: 10.84%
+Normalizing year
+Corr (pearson): 0.980
+Corr (spearman): 0.986
+Corr (kendall): 0.943
+p: 0.000000000, significant
+[ 2.18448614e+04 -4.35085664e+07]
+Normalizing variant
+Testing sqrt of MSE: 63611.345, R^2: 0.901, MAPE: 10.28%
+Normalizing year
+Corr (pearson): 0.977
+Corr (spearman): 0.986
+Corr (kendall): 0.943
+p: 0.000000000, significant
+[ 2.08834251e+04 -4.15715992e+07]
+Normalizing variant
+Testing sqrt of MSE: 63569.054, R^2: 0.901, MAPE: 10.21%
+Normalizing year
+Corr (pearson): 0.974
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000001, significant
+[ 2.01863565e+04 -4.01674912e+07]
+Normalizing variant
+Testing sqrt of MSE: 63529.923, R^2: 0.901, MAPE: 10.18%
+Normalizing year
+Corr (pearson): 0.972
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000001, significant
+[ 1.96575795e+04 -3.91021792e+07]
+Normalizing variant
+Testing sqrt of MSE: 63502.735, R^2: 0.901, MAPE: 10.17%
+Normalizing year
+Corr (pearson): 0.970
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000002, significant
+[ 1.92338532e+04 -3.82483512e+07]
+Normalizing variant
+Testing sqrt of MSE: 63486.934, R^2: 0.901, MAPE: 10.17%
+Normalizing year
+Corr (pearson): 0.969
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000003, significant
+[ 1.88823103e+04 -3.75398832e+07]
+Normalizing variant
+Testing sqrt of MSE: 63479.017, R^2: 0.901, MAPE: 10.16%
+[2023-04-03 15:59:19.869] Start to fit the model:
+[2023-04-03 15:59:19.869] Fitting cascade layer = 0 
+[2023-04-03 15:59:20.254] layer = 0  | Val MSE = 0.01672 | Elapsed = 0.385 s
+[2023-04-03 15:59:20.255] Fitting cascade layer = 1 
+[2023-04-03 15:59:20.768] layer = 1  | Val MSE = 0.01539 | Elapsed = 0.514 s
+[2023-04-03 15:59:20.770] Fitting cascade layer = 2 
+[2023-04-03 15:59:21.290] layer = 2  | Val MSE = 0.01666 | Elapsed = 0.519 s
+[2023-04-03 15:59:21.290] Early stopping counter: 1 out of 2
+[2023-04-03 15:59:21.291] Fitting cascade layer = 3 
+[2023-04-03 15:59:21.807] layer = 3  | Val MSE = 0.01723 | Elapsed = 0.516 s
+[2023-04-03 15:59:21.807] Early stopping counter: 2 out of 2
+[2023-04-03 15:59:21.807] Handling early stopping
+[2023-04-03 15:59:21.807] The optimal number of layers: 2
+[2023-04-03 15:59:21.809] Start to evalute the model:
+[2023-04-03 15:59:21.809] Evaluating cascade layer = 0 
+[2023-04-03 15:59:21.864] Evaluating cascade layer = 1 
+Testing sqrt of MSE: 55820.097, R^2: 0.924, MAPE: 4.98%
+==testing hong kong==
+--mono--
+Testing sqrt of MSE: 68405.933, R^2: 0.885, MAPE: 8.70%
+                 Make       Variant  ...        yscore     PredPrice
+0            Beneteau  Oceanis 34.1  ...  229690.72900  4.536848e+05
+1            Beneteau  Oceanis 30.1  ...  255573.86280  5.553723e+05
+2            Beneteau    Oceanis 38  ...  133235.64550  2.436190e+05
+3             J Boats           111  ...  125525.88880  2.534426e+05
+4            Beneteau      First 36  ...  255573.86280  6.484539e+05
+5             M Boats            40  ...  121178.22470  1.933901e+05
+6            Beneteau  Oceanis 40.1  ...  255573.86280  4.625497e+05
+7            Beneteau      Sense 43  ...  125525.88880  2.740194e+05
+8            Beneteau      First 44  ...  255573.86280  6.713363e+05
+9            Beneteau  Oceanis 46.1  ...  255573.86280  5.590279e+05
+10           Beneteau  Oceanis 51.1  ...  177607.99190  4.345823e+05
+11  Judel And Vrolijk          Tp52  ...   91218.80662  3.487319e+05
+12           Beneteau  Oceanis 51.1  ...  255573.86280  1.081651e+06
+13        Nautor Swan            54  ...  177456.70180  6.101647e+05
+14           X-Yachts          X-55  ...  113218.80660  4.212855e+05
+15        Nautor Swan       Swan 60  ...  133235.64550  5.009783e+05
+
+[16 rows x 15 columns]
+0     0.003736
+1     0.000831
+2     0.099364
+3     0.013771
+4     0.001071
+5     0.368872
+6     0.013397
+7     0.053921
+8     0.029578
+9     0.002735
+10    0.019831
+11    0.103517
+12    0.196259
+13    0.207578
+14    0.107591
+15    0.170703
+dtype: float64
+4679371686.244134 43496968282.5625 16
+--cata--
+[2023-04-03 15:59:23.666] Start to fit the model:
+[2023-04-03 15:59:23.666] Fitting cascade layer = 0 
+[2023-04-03 15:59:24.070] layer = 0  | Val MSE = 0.01672 | Elapsed = 0.403 s
+[2023-04-03 15:59:24.071] Fitting cascade layer = 1 
+[2023-04-03 15:59:24.589] layer = 1  | Val MSE = 0.01539 | Elapsed = 0.517 s
+[2023-04-03 15:59:24.590] Fitting cascade layer = 2 
+[2023-04-03 15:59:25.115] layer = 2  | Val MSE = 0.01666 | Elapsed = 0.525 s
+[2023-04-03 15:59:25.116] Early stopping counter: 1 out of 2
+[2023-04-03 15:59:25.117] Fitting cascade layer = 3 
+[2023-04-03 15:59:25.637] layer = 3  | Val MSE = 0.01723 | Elapsed = 0.521 s
+[2023-04-03 15:59:25.637] Early stopping counter: 2 out of 2
+[2023-04-03 15:59:25.637] Handling early stopping
+[2023-04-03 15:59:25.638] The optimal number of layers: 2
+[2023-04-03 15:59:25.641] Start to evalute the model:
+[2023-04-03 15:59:25.641] Evaluating cascade layer = 0 
+[2023-04-03 15:59:25.652] Evaluating cascade layer = 1 
+Testing sqrt of MSE: 60029.904, R^2: 0.849, MAPE: 7.18%
+              Make         Variant  Year  ...       yscore      rscore     PredPrice
+0             Bali        CATSPACE  2018  ...  593017.3817  537162.866  4.403785e+05
+1  Fountaine Pajot        Tanna 47  2018  ...  593017.3817  537162.866  5.889462e+05
+2           Lagoon             450  2019  ...  616781.8899  537162.866  5.942629e+05
+3           Lagoon             450  2019  ...  616781.8899  537162.866  6.040384e+05
+4             Bali             4.4  2018  ...  593017.3817  537162.866  6.024709e+05
+5             Bali             4.6  2018  ...  593017.3817  537162.866  5.776182e+05
+6             Bali             4.8  2016  ...  509586.6972  537162.866  5.855373e+05
+7        McConaghy  MC53 Catamaran  2019  ...  616781.8899  537162.866  1.002361e+06
+
+[8 rows x 16 columns]
+0    0.000556
+1    0.047099
+2    0.132463
+3    0.078640
+4    0.046313
+5    0.168216
+6    0.086785
+7    0.014273
+dtype: float64
+3603589357.604362 27202473929.42857 8

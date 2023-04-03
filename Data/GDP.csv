@@ -1,73 +1,73 @@
-State, 2022GDP
-Alabama, 55223 
-Antigua and Barbuda, 16787 
-Aruba, 31990 
-Bahamas, 32246 
-Belgium, 50598 
-Belize, 6096 
-British Virgin Islands, 51000 
-Bulgaria, 12505 
-California, 93130 
-Connecticut, 89301 
-Cork, 101509 
-Croatia, 17318 
-Cyprus, 29535 
-Denmark, 65713 
-Dominican Republic, 10573 
-Estonia, 29344 
-Florida, 63081 
-France, 42330 
-Georgia, 6770 
-Germany, 48398 
-Gibraltar, 43000 
-Greece, 20876 
-Grenada, 10477 
-Guadeloupe, 63385 
-Guatemala, 4880 
-Hawaii, 68985 
-Hungary, 18983 
-Illinois, 82789 
-Ireland, 102217 
-Italy, 33740 
-Jersey, 81307 
-Louisiana, 62011 
-Maine, 61491 
-Malta, 32912 
-Martinique, 40900 
-Maryland, 76958 
-Massachusetts, 99274 
-Mexico, 58589 
-Michigan, 62454 
-Mississippi, 47572 
-Monaco, 234316 
-Netherlands, 56298 
-Netherlands Antilles, 28000 
-New Jersey, 81307 
-New York, 105226 
-North Carolina, 68784 
-Norway, 92646 
-Ohio, 70567 
-Oregon, 71150 
-Panama, 16173 
-Portugal, 24910 
-Puerto Rico, 38443 
-Rhode Island, 65879 
-Romania, 15619 
-Saint Kitts and Nevis, 19129 
-Saint Lucia, 10763 
-Saint Vincent and the Grenadines, 8546 
-Sint Maarten (Dutch part), 57767 
-Slovenia, 29469 
-South Carolina, 56593 
-Spain, 29198 
-Sweden, 56361 
-Switzerland, 92434 
-Texas, 79995 
-Trinidad and Tobago, 20746 
-Turkey, 9961 
-U.S. Virgin Islands, 38500 
-United Kingdom, 47318 
-Virginia, 74375 
-Washington, 93977 
-West Indies, 2466 
-Wisconsin, 68680 
+CRS,gdp,pop,gini,hdi
+Alabama,55223,,,
+Antigua and Barbuda,16787,85632,,
+Aruba,31990,,,
+Bahamas,32246,,,
+Belgium,50598,11730564,,
+Belize,6096,441471,,
+British Virgin Islands,51000,,,
+Bulgaria,12505,,,
+California,93130,,,
+Connecticut,89301,,,
+Cork,101509,,,
+Croatia,17318,,,
+Cyprus,29535,,,
+Denmark,65713,,,
+Dominican Republic,10573,,,
+Estonia,29344,,,
+Florida,63081,,,
+France,42330,,,
+Georgia,6770,,,
+Germany,48398,,,
+Gibraltar,43000,,,
+Greece,20876,,,
+Grenada,10477,,,
+Guadeloupe,63385,,,
+Guatemala,4880,,,
+Hawaii,68985,,,
+Hungary,18983,,,
+Illinois,82789,,,
+Ireland,102217,,,
+Italy,33740,,,
+Jersey,81307,,,
+Louisiana,62011,,,
+Maine,61491,,,
+Malta,32912,,,
+Martinique,40900,,,
+Maryland,76958,,,
+Massachusetts,99274,,,
+Mexico,58589,,,
+Michigan,62454,,,
+Mississippi,47572,,,
+Monaco,234316,39150,,
+Netherlands,56298,17812460,,
+Netherlands Antilles,28000,,,
+New Jersey,81307,,,
+New York,105226,,,
+North Carolina,68784,,,
+Norway,92646,,,
+Ohio,70567,,,
+Oregon,71150,,,
+Panama,16173,,,
+Portugal,24910,,,
+Puerto Rico,38443,,,
+Rhode Island,65879,,,
+Romania,15619,19053815,,
+Saint Kitts and Nevis,19129,,,
+Saint Lucia,10763,,,
+Saint Vincent and the Grenadines,8546,,,
+Sint Maarten (Dutch part),57767,,,
+Slovenia,29469,,,
+South Carolina,56593,,,
+Spain,29198,,,
+Sweden,56361,,,
+Switzerland,92434,,,
+Texas,79995,,,
+Trinidad and Tobago,20746,1367558,,
+Turkey,9961,85279553,,
+U.S. Virgin Islands,38500,87146,,
+United Kingdom,47318,67026292,,
+Virginia,74375,,,
+Washington,93977,,,
+West Indies,2466,,,
+Wisconsin,68680,,,
