@@ -20,14 +20,14 @@
 
 % 此处填写摘要内容
 \begin{abstract}
-    Sailboats fulfill diverse roles, fueling a thriving secondary market. 
+    Sailboats fulfill diverse roles, fueling a thriving second-hand market. 
     Brokers, facing numerous complex factors, struggle to determine reasonable pricing. 
-    A tool to assist in comprehensive evaluations and rational pricing for used boats is urgently needed.
-    
+    A tool is urgently needed to assist in comprehensive evaluations and rational pricing for used boats.
+
     This paper aims to construct a reliable model based on existing datasets, 
-    which can provide a reasonable explanation for the pricing of the second-hand sailboat market. 
+    which can provide a reasonable explanation for the pricing of the used sailboat market. 
     It also analyzes the impact of different factors and indicators on prices. 
-    Finally, the model will be applied to the second-hand sailboat market in Hong Kong to provide a reasonable and accurate pricing rule.
+    Finally, the model will be applied to the used sailboat market in Hong Kong to provide a reasonable and accurate pricing rule.
 
     For Data Exploration, \dots
 
@@ -41,9 +41,7 @@
 
     For Problem(e), \dots
 
-    At the very last, we analyze the strengths and weaknesses of our model as well as its
-sensitivity, whose results show that our model has high robustness, precision and accuracy.
-After that, a report is attached.
+    Finally, we conducted an analysis of the strengths and weaknesses of our model, as well as its sensitivity. The results demonstrate that our model exhibits high levels of robustness, precision, and accuracy. After that, a report is attached.
 
 
 
@@ -64,11 +62,11 @@ After that, a report is attached.
 \section{Introduction}
 % 问题背景
 \subsection{Background}
-In our daily lives, sailboats are not only a means of transportation, but also serve as leisure and entertainment, and even for competitive sports. As a result, the growing demand for sailboats has given rise to a thriving boat market, which has gradually developed into a secondary market. In the secondary market, buyers and sellers usually trade through brokers, who play a crucial role in the transaction process.
+In our daily lives, sailboats are not only a means of transportation but also serve as leisure, entertainment, and even for competitive sports. As a result, the growing demand for sailboats has given rise to a thriving boat market, which has developed into a second-hand market. In the market, buyers and sellers usually trade through brokers, who play a crucial role in the transaction process.
 
-For brokers, it is essential to be familiar with the used sailboat market, comprehensively consider various factors, and make reasonable pricing for the used sailboats in order to facilitate a successful transaction. However, the factors affecting the price of used sailboats are numerous and complex, with different brands, variants of boats, years, depreciation rates, as well as local consumption levels and geographical environments having significant impacts. The intertwined influences of these complex factors make it difficult to determine the pricing in the used sailboat market, and it is challenging to come up with a reasonable price that takes all factors into account.
+For brokers, it is essential to be familiar with the second-hand sailboat market, comprehensively consider various factors, and make reasonable pricing for the used sailboats in order to facilitate a successful transaction. However, the factors affecting the price of used sailboats are numerous and complex, with different brands, variants of boats, years, depreciation rates, as well as local consumption levels and geographical environments having significant impacts. The intertwined influences of these complex factors make it difficult to determine the pricing in the used sailboat market, and it is challenging to come up with a reasonable price that takes all factors into account.
 
-Therefore, brokers urgently need a tool to assist them in making more reasonable and comprehensive evaluations of used sailboats, and to make the pricing in the used sailboat market more rational.
+Therefore, brokers urgently need a tool to assist them in making more reasonable and comprehensive evaluations of used sailboats and to make the pricing in the used sailboat market more rational.
 %问题重述
 \subsection{Problem Restatement}
 \textbf{Problem (a) :}
@@ -79,7 +77,7 @@ Therefore, brokers urgently need a tool to assist them in making more reasonable
 
 \textbf{Problem (b) :}
 \begin{itemize}
-    \item Determine whether region has an impact on the price of second-hand boats and explain the effect.
+    \item Determine whether Region has an impact on the price of second-hand boats and explain the effect.
     \item Discuss whether any regional effect is consistent across all sailboat variants.
     \item Address the practical and statistical significance of any regional effects noted.
 \end{itemize}
@@ -87,8 +85,8 @@ Therefore, brokers urgently need a tool to assist them in making more reasonable
 \textbf{Problem (c) :}
 \begin{itemize}
     \item Based on the model, find out how it can be useful in the Hong Kong market.
-    \item Choose one subset and model the regional effect of Hong Kong on each sailboat prices.
-    \item Assess whether  the effect is the same for both catamarans and monohull sailboats.
+    \item Choose one subset and model the regional effect of Hong Kong on each sailboat's prices.
+    \item Assess whether the effect is the same for both catamarans and monohull sailboats.
 \end{itemize}
 
 \textbf{Problem (d) :}
@@ -98,7 +96,7 @@ Therefore, brokers urgently need a tool to assist them in making more reasonable
 
 \textbf{Problem (e) :}
 \begin{itemize}
-    \item Create a one-to two-page report with well-chosen graphics to assist the Hong Kong sailboat broker to understand your findings.
+    \item Create a one-to-two-page report with well-chosen graphics to help the Hong Kong sailboat broker to understand your findings.
 \end{itemize}
 %我们的工作
 \subsection{Our work \& Model Overview}
@@ -109,11 +107,11 @@ Therefore, brokers urgently need a tool to assist them in making more reasonable
 \end{figure}
 Our team began by meticulously cleaning, expanding, and pre-analyzing the dataset using \textbf{Adaptive Density-Based Clustering} and \textbf{Linear interpolation} techniques. These methods allowed us to identify patterns and trends in the data, preparing it for subsequent modeling.
 
-Next, we trained a \textbf{Heuristic Hierarchical Multiple Regression Model} to establish the relationship between year, region, variant, and price, and to abstract the effect of regions and variants on sailboat prices. This approach helped us capture the interactions between these variables and their influence on the pricing.
+Then, we utilized a \textbf{Hierarchical Multiple Regression} to abstractly express the Region Effect and Variant Effect, to achieve the continuous representation of the two discrete variables, Region and Variant. Next, we applied \textbf{Linear Regression} to obtain the relationship between Year, Region Effect, Variant Effect, and Price. This approach helped us capture the interactions between these variables and their influence on the pricing.
 
-Following this, we employed a \textbf{Deep Forest Model} to train the relationship between region and variant factors and their respective effects. This advanced ensemble learning technique allowed us to predict the effect of unknown regions and variants, which in turn enabled us to further predict their prices.
+Following this, we employed a \textbf{Deep Forest Model} to estimate the relationship between region and variant indicators and their respective effects. This advanced ensemble learning technique allowed us to predict the effect of unknown regions and variants, which in turn enabled us to further predict their prices.
 
-As a result, we successfully developed a comprehensive and robust model (Figure \ref{fig:OurWork}) that is well-suited for Hong Kong brokers when pricing used sailboats. By leveraging the strengths of both Heuristic Hierarchical Multiple Regression and Deep Forest Models, our approach offers a reliable and accurate way to estimate the value of sailboats based on factors such as year, region, and variant. This model serves as a valuable tool for brokers and other stakeholders in the sailboat market, facilitating informed decision-making and ensuring fair pricing practices.
+As a result, we successfully developed a comprehensive and robust model (Figure \ref{fig:OurWork}) that is well-suited for Hong Kong brokers when pricing used sailboats. By leveraging the strengths of both Heuristic Hierarchical Multiple Regression and Deep Forest Models, our approach offers a reliable and accurate way to estimate the value of sailboats based on indicators in the dataset. This model serves as a valuable tool for brokers and other stakeholders in the sailboat market, facilitating informed decision-making and ensuring fair pricing practices.
 
 \section{Assumptions and Justifications}
 % 问题假设
@@ -135,21 +133,32 @@ adequately justified.
 \begin{center}
 \begin{tabular}{cc}
 	\toprule
-	\multicolumn{1}{m{3cm}}{\centering Symbol}
-	&\multicolumn{1}{m{8cm}}{\centering Definition}\\
+
+	Symbol& Definition\\
 	\midrule
 	$l$ &Measurement data\\
+    \hline
 	$L$ &Feature vector\\
+    \hline
 	$F$ &The dimension of $L$\\
+    \hline
     $k$ &Search range\\
+    \hline
     $\lambda$ & The feature values of natural neighbors\\
+    \hline
     $nb_k(l)$ & The number of reverse neighbors of $l$ in the $k$-th iteration\\
+    \hline
     $R$ & Correlation coefficient\\
+    \hline
     $\hat{y}$ & The estimated value of $y$\\
+    \hline
     $\hat{\beta}$ & The estimated value of the regression coefficients\\
-    $\textbf{X}, \textbf{Y}$ & The variables for which the correlation is to be tested \\
-    $\textbf{P}$ & Measured value \\
-    $\textbf{Q}$ & Simulated value \\ 
+    \hline
+    $X, Y$ & The variables for which the correlation is to be tested \\
+    \hline
+    $P$ & Measured value \\
+    \hline
+    $Q$ & Simulated value \\ 
 	\bottomrule
 \end{tabular}
 \end{center}
@@ -163,7 +172,7 @@ adequately justified.
 \end{figure}
 
 \subsection{Data Cleaning}
-First of all, we turn the \textbf{\texttt{xlsx}} format data sheet into \textbf{\texttt{csv}} format. 
+First of all, we turn the given \textbf{\texttt{xlsx}} format data sheet into \textbf{\texttt{csv}} format. 
 The conversion causes some minor errors like extra spaces and unexcepted characters which can be easily filtered out by text editor and python string operating functions like \textbf{\texttt{strip()}} or so.
 
 Secondly, we use \textbf{Linear interpolation} to fill in the missing data and then apply \textbf{Adaptive Density-Based Clustering} for spell correction,
@@ -181,7 +190,7 @@ Then we define the Reverse Neighbors as:
 $$RNN(l_i)=\{l_j \in D|l_i\in NN_k(l_j)\}$$
 
 Applying $NN_k$ and $RNN(l)$ iteratively to obtain clustering centers, unclassified text samples are assigned to the nearest clustering center, and $\lambda$ is calculated as follows:
-$$\lambda=min\{k|\sum_{i=1}^{n}f(nb_k(l_i))=0\quad or\quad \sum_{i=0}^{n}f(nb_k(l_i))=\sum_{i=0}^{n}f(nb_{k-1}(l_i))\}$$
+$$\lambda=\min\{k|\sum_{i=1}^{n}f(nb_k(l_i))=0\quad or\quad \sum_{i=0}^{n}f(nb_k(l_i))=\sum_{i=0}^{n}f(nb_{k-1}(l_i))\}$$
 
 Where $f(x)$ is defined as:
 $$f(x)=
@@ -189,7 +198,7 @@ $$f(x)=
 0,\quad otherwise\\1,\quad if\quad x=0
 \end{cases}$$
 
-Further more, we merge \textbf{Make} and \textbf{Variant} into a single feature, which we refer to as \textbf{Variant}.
+Further more, we merge \textbf{Make} into \textbf{Variant} into a single feature, which we refer to as \textbf{Variant}.
 
 Finally, we merge the corrected dataset with the accurate one after making necessary modifications.
 \begin{figure}[htbp]
@@ -202,7 +211,7 @@ Finally, we merge the corrected dataset with the accurate one after making neces
 
 Our team diligently collected and organized additional ship attributes for the given dataset using Pandas' \texttt{read\_html} web scraping technique,
 which allowed us to efficiently extract valuable information from various online sources. 
-Simultaneously, we gathered the 2020 per capita GDP data of the relevant regions to provide important economic context that might influence sailboat prices.
+Simultaneously, we gathered the 2020 GDP per capita  data of the relevant regions to provide important economic context that might influence sailboat prices.
 
 Upon obtaining the data, we first employed Pandas' related functions to remove any duplicate entries, 
 ensuring the dataset's integrity and uniqueness. 
@@ -210,20 +219,17 @@ Next, we addressed missing values by using linear interpolation,
 a technique that estimates missing data points by drawing upon the values of neighboring data points. 
 This approach helped us create a more complete and reliable dataset for further analysis.
 
-These data collection, organization, and preprocessing efforts significantly enriched the diversity of the data and expanded the dataset size.
+These data collection, organization, and preprocessing efforts significantly enriched the diversity of the data and expanded the dataset dimension.
 By incorporating a wider range of sailboat features and relevant economic data, we were able to develop a more comprehensive understanding of the factors influencing sailboat prices. 
 This extensive dataset laid a solid foundation for our subsequent modeling efforts, enabling us to create more accurate and reliable predictive models for sailboat pricing.
-
-In conclusion, the meticulous data collection, organization, and preprocessing steps we undertook played a crucial role in the success of our modeling efforts. 
-By addressing issues such as duplicates and missing values, and incorporating a diverse range of ship attributes and economic data,
-we ensured the robustness and reliability of our dataset, paving the way for the development of highly effective predictive models.
 
 
 
 
 
 \subsection{Data Analysis}
-There is an abundance of labels related to sailboat specifications, which makes it challenging to discuss their individual influence on listing prices.
+There is a lot of labels related to sailboat specifications, which is complicated and may have mutually subtle relationship.
+Therefore, it is challenging to discuss their individual influence on listing prices.
 Attempting to directly perform regression on these labels using machine learning models can lead to \textbf{overfitting issues}, where the model becomes too specialized in fitting the training data and loses its ability to generalize well to new, unseen data.
 
 Despite these challenges, we can still extract some relatively straightforward insights from the data, which can provide valuable theoretical support for our subsequent modeling efforts:
@@ -269,7 +275,7 @@ As for Hierarchical Multiple Regression, to solve the objective function for a g
 $$L(y,f(x,w))=\sum_{i=1}^{n}[y_i-f(x_i,w_i)]^2$$
 
 To get the coefficient matrix, we typically use the least squares method to solve it:
-$$minf(x)=\sum_{i=1}^{n}L^2_i(x)=\sum_{i=1}^{n}L_i^2[y_i,f(x_i,w_i)]=\sum_{i=1}^{n}[y_i-f(x_i,w_i)]^2$$
+$$\min f(x)=\sum_{i=1}^{n}L^2_i(x)=\sum_{i=1}^{n}L_i^2[y_i,f(x_i,w_i)]=\sum_{i=1}^{n}[y_i-f(x_i,w_i)]^2$$
 
 The matrix is illustrated as:
 $$\hat{\beta}=(X^TX)^{-1}X^TY=(\sum x_ix_i^T)^{-1}(\sum x_iy_i)$$
@@ -283,26 +289,21 @@ In the hierarchical multiple regression process, each layer focuses on one varia
     \includegraphics[width=1\textwidth]{Model1.png}
     \caption{Brief process of Model 1}\label{fig:Model1}
 \end{figure}
-A key aspect of Model 1's success is the heuristic approach employed during each normalization step. This method adapts to the size of the dataset, offering a more efficient and effective means of processing the data. For larger datasets, regression is performed, which capitalizes on the wealth of information available and can identify complex patterns and relationships. Conversely, for smaller datasets, the model calculates the average, providing a simpler and more straightforward representation of the data.
+A key aspect of \emph{Model 1}'s success is the heuristic approach employed during each normalization step. This method adapts to the size of the dataset, offering a more efficient and effective means of processing the data. For larger datasets, regression is performed, which capitalizes on the wealth of information available and can identify complex patterns and relationships. Conversely, for smaller datasets, the model calculates the average, providing a simpler and more straightforward representation of the data.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=.8\textwidth]{Hierarchical.png}
+    \includegraphics[width=.6\textwidth]{Hierarchical.png}
     \caption{Hierarchical Multiple Regression}\label{fig:Hierarchical}
 \end{figure}
 
-This adaptive heuristic approach has a significant impact on the accuracy of the model's predictions, as it tailors the normalization process to suit the specific characteristics of the dataset. By adjusting the method used based on dataset size, Model 1 is better able to understand the underlying patterns and relationships, leading to more accurate and reliable predictions.
-
-Furthermore, the hierarchical structure of the model enables it to isolate the effects of individual variables, providing valuable insights into their specific contributions to the overall prediction. This granular understanding of the relationships between variables can be instrumental in guiding further analysis and informing decision-making processes.
-
-In summary, Model 1 offers a powerful and adaptive approach to price prediction, harnessing the power of heuristic hierarchical multiple regression to deliver accurate and reliable results. By tailoring the normalization process to suit the characteristics of the dataset and iteratively refining the model's understanding of variable relationships, Model 1 provides a robust and versatile tool for predicting prices based on input variables such as Year, Region, and Variant.
+This adaptive heuristic approach has a significant impact on the accuracy of the model's predictions, as it tailors the normalization process to suit the specific characteristics of the dataset. By adjusting the method used based on dataset size, \emph{Model 1} is better able to understand the underlying patterns and relationships, leading to more accurate and reliable predictions.
 
 
 \subsubsection{Model 2 \textemdash  Deep Forest Model}
-However, \emph{Model 1} is somehow incomplete because \emph{Model 1} requires that the variant and region of the predicted data have appeared in the dataset before. 
-However, in actual prediction, the variant and region may be opaque to the model. 
-Taking the third question as an example, \emph{Model 1} can't predict the price of Hong Kong because the region effect of Hong Kong hasn't been evaluated by the model. 
-Therefore, we use the \textbf{Deep Forest Model} to establish \emph{Model 2}.
+
+
+However, the regression prediction based on \emph{Model 1} is incomplete, as \emph{Model 1} requires the variant and region of the data being predicted to have appeared in the dataset before. In practice, the variant and region might be unseen by the Model. For instance, in the third question, \emph{Model 1} cannot predict the prices in Hong Kong since the Model has not assessed the region effect for Hong Kong. Therefore, we employed the Deep Forest algorithm to establish \emph{Model 2}.
 
 \begin{figure}[htbp]
     \centering
@@ -310,32 +311,22 @@ Therefore, we use the \textbf{Deep Forest Model} to establish \emph{Model 2}.
     \caption{Deep Forest Model}\label{fig:DF1}
 \end{figure}
 
-Deep forest is an ensemble learning model derived from the random forest approach. Ensemble learning techniques combine the predictions of multiple models to improve overall performance and reduce the risk of overfitting. In this case, the deep forest algorithm aggregates the results of numerous decision tree classifiers to produce a more accurate and stable prediction.
+Decision trees are a common machine learning method, with both classification and regression models. Initially, we used a basic decision tree for regression, but the model had a large error and poor accuracy for predicting prices. As a result, we optimized the model using the Deep Forest algorithm. Deep Forest is an ensemble learning model based on random forests. Unlike traditional decision trees, Deep Forest uses randomized strategies to train each tree-based classifier, increasing the model's diversity. Compared to a single decision tree, the Deep Forest model is more robust. The simplified process is as follows:
 
-
-Unlike traditional decision trees, where each tree classifier is trained using the same dataset and strategy, deep forest introduces an element of randomness to increase the diversity of the model. By incorporating a randomized strategy for each tree classifier, the algorithm can capture a broader range of patterns and relationships within the data. This stochastic approach helps to minimize the correlation between individual trees, thereby improving the model's overall performance.
-
-The deep forest model has several advantages over a single decision tree. First, it is more robust, as it leverages the wisdom of multiple tree classifiers to arrive at a consensus prediction. This aggregation process helps to reduce the impact of any single tree's errors, ensuring that the overall prediction is more reliable. Second, the deep forest model is less susceptible to overfitting, a common issue in machine learning where a model learns the training data too well and performs poorly on new, unseen data. By using a randomized strategy to train each tree classifier, deep forest reduces the likelihood of overfitting and improves the model's generalization capabilities.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{Deep_forest2.png}
+    \includegraphics[width=.8\textwidth]{Deep_forest2.png}
     \caption{Deep Forest Model}\label{fig:DF2}
 \end{figure}
-Another key benefit of the deep forest model is its ability to handle both categorical and continuous features, making it highly versatile for various types of problems. Additionally, the deep forest algorithm's structure enables it to be easily parallelized, allowing for efficient processing on multi-core processors or distributed computing environments.
 
-In summary, the deep forest algorithm is an effective and robust machine learning method that addresses the limitations of traditional decision trees. By employing an ensemble learning approach and incorporating randomized strategies for training tree classifiers, deep forest models can deliver more accurate and reliable predictions. These features make the deep forest model particularly well-suited for challenging tasks, such as predicting prices, where a high degree of accuracy and stability is essential for success.
+
+First, we expanded the dataset to obtain quantitative data for the region and variant. Specifically, for the variant, we expanded data such as draft, beam, water tank, fuel tank, cabins, and displacement. For the region, we expanded data such as GDP per capita, Gini coefficient, and Human Development Index. When dealing with unmarked variants and regions, we first applied \emph{Model 1} to obtain the effect of marked variants and regions. Then, we applied the effect of marked variants and regions to the Deep Forest, regressing through the expanded data to obtain the effect of unmarked variants and regions, and thus predicting the price.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Model2.png}
     \caption{Brief process of Model 2}\label{fig:Model2}
 \end{figure}
-
-As for \emph{Model 2}, we first expanded the dataset to obtain quantified data for regions and variants.
-Specifically, for variants, we expanded data such as \texttt{draft}, \texttt{beam}, \texttt{water tank}, \texttt{fuel tank}, \texttt{cabins}, \texttt{displacement}, etc. 
-For regions, we expanded data such as \texttt{GDP}, \texttt{Gini coefficient}, \texttt{Human Development Index}, etc. 
-When dealing with unmarked variants and regions, we first used \emph{Model 1} to obtain the effects of marked variants and regions, and then applied the effects of marked variants and regions to the deep forest. 
-By expanding the data for regression, we obtained the effects of unmarked variants and regions, and thus predicted the price.
 
 
 \subsection{Model Accuracy Analysis}
@@ -346,15 +337,52 @@ Given that the leave-one-out method is not affected by random partition,
 it is effective for small-sample and imbalanced datasets, 
 and can accurately evaluate the performance of the model, 
 we used the \textbf{leave-one-out method} to analyze the model's error in the error analysis part.
-
-
-
+  
 For accuracy analysis, we use the correlation coefficient $R$ and Mean Absolute Percentage Error (MAPE) as evaluation metrics.
-$$R(\textbf{X},\textbf{Y})=\frac{\text{cov}(\textbf{X},\textbf{Y})}{\sqrt{\text{var}[\textbf{X}] \text{v         ar}[\textbf{Y}]}}$$
+$$R(\textbf{X},\textbf{Y})=\frac{\text{cov}(\textbf{X},\textbf{Y})}{\sqrt{\text{var}[\textbf{X}] \text{var}[\textbf{Y}]}}$$
 $$\text{MAPE} = \frac{\sum_{i = 1}^n (\frac{|\textbf{P} - \textbf{Q}|}{\textbf{P}} \times 100\%)}{n}$$
 where:
     $$\text{var}(\textbf{X})=\frac{\sum_{i=1}^{n}(\textbf{X}_i-\overline{\textbf{X}})(\textbf{X}_i-\overline{\textbf{X}})}{n-1}$$
     $$\text{cov}(\textbf{X},\textbf{Y})=\frac{\sum_{i=1}^{n}(\textbf{X}_i-\overline{\textbf{X}})(\textbf{Y}_i-\overline{\textbf{Y}})}{n-1}$$
+
+
+    \begin{table}[htbp]
+        \centering
+        \begin{tabular}{c|c|c}
+        Train& Cata& Mono \\
+        \hline
+        \hline
+        $R^2$ & 0.924 & 0.974 \\
+        \hline
+        MAPE & 5.09\% & 7.29\% \\
+        \hline
+        \end{tabular}
+        \qquad
+        \begin{tabular}{c|c|c}
+        Test& Cata& Mono \\
+        \hline
+        \hline
+        $R^2$ & 0.901 & 0.942 \\
+        \hline
+        MAPE & 10.16\% & 11.65\% \\
+        \hline
+        \end{tabular}
+        \qquad
+        \begin{tabular}{c|c|c}
+        HK& Cata& Mono \\
+            \hline
+            \hline
+            $R^2$ & 0.849 & 0.885 \\
+            \hline
+            MAPE & 7.18\% & 8.70\% \\
+            \hline
+            \end{tabular}
+        \caption{Accuracy of Train Set, Test Set and HK Set}
+        \label{tab:Accuracy}
+    \end{table}
+
+
+
 \section{Regional Effect Analysis}
 Applying \emph{Model 1}, we can easily abstract the effect of each region. 
 Therefore, by normalizing the year and variant, 
@@ -367,10 +395,10 @@ we can clearly see the effect of each region(see Figure \ref{fig:region_effect})
 \end{figure}
 
 
-\section{The applicability of The Prediction Model in Hong Kong}
+\section{The Applicability of The Prediction Model in Hong Kong}
 When applying our model to the Hong Kong region, 
-we first assume that we can obtain the Year, Variant, and Region parameters for the used sailboats. 
-For the given geographic regions, we start by using \emph{Model 2} to determine the Region Effect, leveraging the area's GDP data.
+we first try to obtain the indicators for the used sailboats. 
+For Hong Kong, we start by using \emph{Model 2} to determine the Region Effect, leveraging the area's GDP per capita data.
 
 If the predicted Variant is present in the training set, 
 we can directly use \emph{Model 1} to estimate the pricing by incorporating the Region Effect, Variant Effect, and Year. 
@@ -386,29 +414,64 @@ and the age of the sailboat to provide accurate and reliable pricing estimates.
 \section{Extended Inferences or Conclusion}
 
 
-\section{Further Improvements}
-
 \section{Strengths and Weaknesses}
 \subsection{Strengths}
 
-\textbf{Comprehensiveness:}
-After the basic data processing, we significantly expanded the dataset, including extending the Variant to Draft, Beam, Displacement, Water tank, Fuel tank, and Cabin, as well as expanding the Region to GDP, HDI, and Gini coefficient. We performed correlation tests for each variable, making the modeling process extensive and comprehensive.
+\textbf{Strength-1 Comprehensiveness:}
+After the basic data processing, we significantly expanded the dataset, including extending the Variant to Draft, Beam, Displacement, Water tank, Fuel tank, and Cabin, as well as expanding the Region to GDP per capita. We performed correlation tests for each variable, making the modeling process extensive and comprehensive.
 
-\textbf{Innovative:}
+\textbf{Strength-2 Innovative:}
 Our model combines heuristic learning and hierarchical multivariate regression, obtaining accurate predictions through continuous iteration. This creative and highly applicable model is well-suited for the task at hand.Additionally, we used a deep forest algorithm to extend the prediction of unknown variants and regions, enhancing the model's versatility. 
 
-\textbf{Accuracy:}
+\textbf{Strength-3 Accuracy:}
 Our model performs exceptionally well in terms of both error analysis and accuracy, achieving 94.91\% on the Catamarans test set and 92.71\% on the Monohulled Boats test set. Moreover, the model can improve its accuracy through self-iteration and possesses heuristic learning capabilities.
 
-\textbf{Applicability:}
+\textbf{Strength-4 Applicability:}
 When applied to the Hong Kong market, the model maintains a high level of accuracy, demonstrating its excellent applicability. 
 
 \subsection{Weaknesses}
-\textbf{Time consuming:}
+\textbf{Weakness-1 Time consuming:}
 The model can achieve satisfactory regression results after 2-3 iterations when processing the data for this task. However, when handling larger datasets, the increased number of iterations may result in additional time costs.
 
-\textbf{Lack of geography  factor analysis:}
+\textbf{Weakness-2 Lack of geography  factor analysis:}
 Due to the difficulty in obtaining geographical data and the challenge of analyzing and quantifying factors such as climate, the model does not include geographical factors. Despite this limitation, the model still provides valuable insights and accurate predictions for the used sailboat market.
+
+\section{Further Improvements}
+Although our Model has been optimized over several days, evolving from a simple decision tree to an organic combination of Heuristic Hierarchical Multiple Regression and Deep Forest, both \emph{Model 1} and \emph{Model 2} have produced excellent results in price prediction. However, during each iteration, we still only used a simple regression model, with accuracy being the result of iteration and heuristic learning. Upon reviewing the model, we identified the following two issues:
+\begin{itemize}
+    \item When fitting the Variant Effect, we lost regional information.
+    \item Combined Make and Variant, causing the model to overlook the premium issue between different Makes.
+\end{itemize}
+\subsection{Lasso Regression Update for Model}
+To address the first issue, we decided to use Lasso Regression to replace the simple linear regression in each iteration process. The characteristics of Lasso Regression, which can avoid the problem of multicollinearity, also resolved the shortcomings of the original model. In each round of iterative regression, we only need to perform Lasso Regression on Variant and Region once, avoiding the loss of regional information. The specific formula is as follows:
+
+$L_1,L_2$ regularization:
+$$L_1=\lambda\sum_{j=1}^{p}|\beta_j|,L_2=\sum_{j=1}^{p}\beta_j^2$$
+
+Lasso Regression's loss function:
+$$\text{minizize }\frac{1}{2n}||y-X\beta||_2^2+\lambda||\beta||_1$$
+
+Assume $\beta_i=\{\beta_{i1},\beta_{i2},\beta_{i3}\}$After introducing Lasso Regression, the model's process becomes:
+\begin{itemize}
+    \item \textbf{Step 1:} Since the relationship between year and price is highly linear, we first normalize the Year parameter to remove its influence,we can get $\beta_{11}$.
+    \item \textbf{Step 2:} Then apply Lasso Regression to simultaneously normalize Variant and Region, combining the original functions $f_1(\beta_{12})\&g(\beta_{13})$ into $h_1(\beta_{12},\beta_{13})$.
+    \item \textbf{Step 3:} Feeding $\beta_1=\{\beta_{11},\beta_{12},\beta_{13}\}$ into the iterative heuristic learning function. We perform iterative regression to obtain $h_1(\beta_{12},\beta_{13}),h_2(\beta_{22},\beta_{23}),\cdots,h_n(\beta_{n2},\beta_{n3})$ until the desired accuracy is reached, resulting in the final matrix $\beta_n=\{\beta_{n1},\beta_{n2},\beta_{n3}\}$.
+    \item \textbf{Step 4:} Using $\beta_n$ for regression prediction, we obtain the predicted value.
+\end{itemize}
+
+This process is similar to the basic model idea. We also tried to update the model using Lasso Regression and re-predict the price. However, due to the lack of precision in the design matrix and the difficulty in controlling the regularization strength, the update was unsuccessful. Nonetheless, based on the initial improved model results and the Lasso Regression loss function, we can predict that the improved model will address multicollinearity issues for correlated Variant and Region variables.
+
+\subsection{Better utilization of the Deep Forest}
+As previously mentioned, we used Lasso Regression to address the issue of losing regional information when fitting the Variant Effect. For the second issue, we considered fully utilizing Deep Forest by applying it to the regression process of \emph{Model 1}. Since Random Forest employs random sampling and feature selection, it can reduce the influence between correlated variables, thereby reducing multicollinearity problems, enhancing the stability and predictive accuracy of the regression model. Therefore, we do not need to combine Make and Variant into a single Variant variable for regression analysis. Instead, we can input all the screened variables into Deep Forest, allowing the model to self-prune and fit, enhancing robustness and generalization capabilities,then we get the graph below:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.8\textwidth]{update.png}
+    \caption{Optimizing Model Performance}\label{fig:update}
+\end{figure}
+
+We tested the optimized model on the training set and obtained the following results: Clearly, Deep Forest performs better in handling noise. However, on the other hand, due to the small dataset and the limited number of samples for some categories, Deep Forest exhibited some overfitting and underfitting phenomena. Moreover, since \emph{Model 2} also employed the Random Forest algorithm, this led to nested Random Forests, resulting in significant computational overhead. Compared to the increase in accuracy, the exponential growth of overhead is not worth the cost. Therefore, simply replacing the model with Deep Forest is not a perfect solution, and the model still requires further optimization and adjustment.However, from the preliminary results, it can be seen that the use of Deep Forest in the regression part does provide a solution to the second issue. We firmly believe that through structural adjustments, the model's performance will undoubtedly be further optimized!
+
 
 \section{Conclusion}
 In conclusion, our study has successfully addressed the challenges faced by brokers in the used sailboat market, where pricing is influenced by a myriad of factors such as brand, variant, age, depreciation rates, local consumption levels, and geographical environments. By developing a comprehensive and robust model that combines Heuristic Hierarchical Multiple Regression and Deep Forest Models, we have created a valuable tool that allows brokers and other stakeholders in the sailboat market to make well-informed decisions and ensure fair pricing practices.
@@ -432,10 +495,11 @@ In summary, our study has successfully developed a powerful and versatile model 
 \begin{letter}{Report}
 \noindent\rule[0.25\baselineskip]{\textwidth}{2pt} 
 \begin{flushleft}  % 左对齐环境，无首行缩进
-\textbf{To:} Heishan Yan\\
-\textbf{From:} Team 1234567\\
-\textbf{Date:} October 1st, 2019\\
-\textbf{Subject:} A better choice than MS Word: \LaTeX
+\textbf{To:} The sailboat broker in Hong Kong\\
+\textbf{From:} Team \#2332102\\
+\textbf{Date:} Apr 3th, 2023\\
+\textbf{Subject:} 
+\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
 \end{flushleft}
 
 In the memo, we want to introduce you an alternate typesetting program to the prevailing MS Word: \textbf{\LaTeX}. In fact, the history of \LaTeX\ is even longer than that of MS Word. In 1970s, the famous computer scientist Donald Knuth first came out with a typesetting program, which named \TeX\ \ldots
@@ -471,56 +535,5 @@ According to all those mentioned above, it is really worth to have a try on \LaT
 \bibitem{15} Madhulatha T S. An overview on clustering methods[J].
 \bibitem{16} Limsombunchao V. House price prediction, hedonic price model.
 \end{thebibliography}
-
-
-% 以下为附录内容
-% 如您的论文中不需要附录，请自行删除
-\begin{subappendices}  % 附录环境
-
-\section{Appendix A: Further on \LaTeX}
-To clarify the importance of using \LaTeX\ in MCM or ICM, several points need to be covered, which are \ldots
-
-To be more specific, \ldots
-
-All in all, \ldots
-
-Anyway, nobody \textbf{really} needs such appendix \ldots
-
-\section{Appendix B: Program Codes}
-Here are the program codes we used in our research.
-
-% 代码环境示例三则
-% 如您的论文不需要展示代码，请删除
-% 更多用法，请参考 listings 宏包文档
-
-% Python 代码示例
-\begin{lstlisting}[language=Python, name={test.py}]
-# Python code example
-for i in range(10):
-    print('Hello, world!')
-\end{lstlisting}
-
-% MATLAB 代码示例
-\begin{lstlisting}[language=MATLAB, name={test.m}]
-% MATLAB code example
-for i = 1:10
-    disp("hello, world!");
-end
-\end{lstlisting}
-
-% C++ 代码示例
-\begin{lstlisting}[language=C++, name={test.cpp}]
-// C++ code example
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 0; i < 10; i++)
-        cout << "hello, world" << endl;
-    return 0;
-}
-\end{lstlisting}
-
-\end{subappendices}  % 附录内容结束
 
 \end{document}  % 结束
