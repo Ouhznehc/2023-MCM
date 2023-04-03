@@ -1,767 +1,227 @@
-Select Region: New York
-Most frequent make: Beneteau
-leave one out in 14 sample(s)
-Square root of Evaluated MSE: 17515.54550219377
-0     32.196967
-1    -10.830445
-2     -2.758050
-3      1.346264
-4     -4.189204
-5    -11.790488
-6     13.509642
-7     -4.580815
-8      4.050889
-9     -5.309679
-10    -7.248860
-11     8.682750
-12    -0.667498
-13     7.293845
-Name: New York.Beneteau, dtype: float64
-Select Region: Trinidad and Tobago
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Maryland
-Most frequent make: Beneteau
-leave one out in 6 sample(s)
-Square root of Evaluated MSE: 29053.127670667396
-0    -4.364860
-1    -0.885348
-2    27.612214
-3    15.634207
-4   -15.294187
-5     7.149687
-Name: Maryland.Beneteau, dtype: float64
-Select Region: Portugal
-Most frequent make: Beneteau
-leave one out in 5 sample(s)
-Square root of Evaluated MSE: 416055.63344874355
-0    -14.517047
-1     34.886684
-2     -7.696666
-3    -48.945825
-4    477.884475
-Name: Portugal.Beneteau, dtype: float64
-Select Region: West Indies
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Rhode Island
-Most frequent make: Jeanneau
-leave one out in 6 sample(s)
-Square root of Evaluated MSE: 99200.0981227458
-0    12.863790
-1   -14.341488
-2    -4.837430
-3     9.755104
-4    33.434448
-5   -39.461117
-Name: Rhode Island.Jeanneau, dtype: float64
-Select Region: Sweden
-Most frequent make: Beneteau
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 107850.00000000012
-0    53.462019
-1   -34.837297
-Name: Sweden.Beneteau, dtype: float64
-Select Region: Spain
-Most frequent make: Jeanneau
-leave one out in 60 sample(s)
-Square root of Evaluated MSE: 45757.023481261735
-0    -13.150961
-1     -6.733176
-2     24.932982
-3    -10.376273
-4    -10.362840
-5      8.845540
-6     -4.387648
-7      1.906181
-8     21.517298
-9     21.549949
-10    -4.689914
-11    -6.137359
-12     1.086467
-13    52.837178
-14     6.577764
-15     6.695272
-16    12.733178
-17   -23.746343
-18   -20.714669
-19   -15.749889
-20    17.340716
-21    -2.427371
-22   -26.439999
-23   -10.213684
-24    -7.327572
-25    -4.303563
-26   -27.844437
-27     9.371973
-28    34.417046
-29   -11.700718
-30     0.506015
-31    16.335904
-32   -30.940918
-33   -14.812651
-34   -21.631539
-35   -21.614402
-36    17.837680
-37    55.344632
-38     3.231182
-39     7.447649
-40    34.358338
-41   -15.411144
-42    -6.631897
-43    28.675526
-44   -19.422065
-45    -2.092876
-46    13.460606
-47     7.471709
-48     7.977671
-49    11.846978
-50     0.414007
-51     4.156669
-52     8.096725
-53    18.833042
-54   -24.103893
-55    41.099805
-56    -7.073599
-57    20.540397
-58   -20.904542
-59   -20.891722
-Name: Spain.Jeanneau, dtype: float64
-Select Region: Malta
-Most frequent make: Dufour
-leave one out in 10 sample(s)
-Square root of Evaluated MSE: 53480.7221383124
-0   -11.511491
-1    18.007482
-2   -19.904503
-3     5.474765
-4    -6.133927
-5    15.929277
-6    18.796513
-7   -20.065363
-8     6.308537
-9   -34.979913
-Name: Malta.Dufour, dtype: float64
-Select Region: Germany
-Most frequent make: Bavaria
-leave one out in 22 sample(s)
-Square root of Evaluated MSE: 26702.146247946992
-0    -18.161074
-1     -0.718637
-2      8.046518
-3      9.741017
-4     12.841825
-5     -0.229342
-6     -0.516265
-7      5.994883
-8      5.330074
-9     -9.459458
-10    -4.381664
-11   -11.667386
-12    -1.397870
-13    23.533196
-14    -6.463147
-15    -3.833898
-16    -0.385391
-17   -20.352138
-18   -14.660606
-19     8.894553
-20    25.516405
-21    -1.804935
-Name: Germany.Bavaria, dtype: float64
-Select Region: Sint Maarten (Dutch part)
-Most frequent make: Jeanneau
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 195001.00000000006
-0    195.002950
-1    -66.102034
-Name: Sint Maarten (Dutch part).Jeanneau, dtype: float64
-Select Region: France
-Most frequent make: Beneteau
-leave one out in 39 sample(s)
-Square root of Evaluated MSE: 63789.15043028657
-0      6.886477
-1      8.632289
-2     21.775238
-3    -25.067344
-4     52.469985
-5     17.100059
-6      3.782641
-7    -18.502632
-8    -18.499029
-9     40.338133
-10    -7.411338
-11    -8.150151
-12    10.010691
-13   -30.004167
-14   -15.582309
-15    19.498111
-16    16.106165
-17    28.583440
-18     5.180244
-19    10.653924
-20   -29.534272
-21   -34.454853
-22   -14.347757
-23   -14.335903
-24    31.663204
-25   -22.023334
-26    52.811547
-27   -16.072987
-28    -5.066101
-29   -10.604941
-30   -10.604941
-31    -4.974872
-32   -13.801170
-33     0.612489
-34    46.861965
-35     3.017814
-36    50.107083
-37   -10.643767
-38    -2.743128
-Name: France.Beneteau, dtype: float64
-Select Region: Mexico
-Most frequent make: Beneteau
-leave one out in 6 sample(s)
-Square root of Evaluated MSE: 152827.2474114455
-0    -74.266772
-1     47.011246
-2     -3.975777
-3     -9.737659
-4    -23.234435
-5    122.062065
-Name: Mexico.Beneteau, dtype: float64
-Select Region: U.S. Virgin Islands
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Martinique
-Most frequent make: Beneteau
-leave one out in 8 sample(s)
-Square root of Evaluated MSE: 51873.22908444979
-0   -39.883361
-1    49.874964
-2     9.756217
-3    -4.817951
-4    55.155911
-5    -9.702193
-6   -13.216109
-7    -0.745771
-Name: Martinique.Beneteau, dtype: float64
-Select Region: Antigua and Barbuda
-Most frequent make: Dufour
-leave one out in 3 sample(s)
-Square root of Evaluated MSE: 31189.40153408495
-0    11.430368
-1   -35.015208
-2    10.529222
-Name: Antigua and Barbuda.Dufour, dtype: float64
-Select Region: Texas
-Most frequent make: Beneteau
-leave one out in 5 sample(s)
-Square root of Evaluated MSE: 40115.51042871569
-0    25.029236
-1   -19.496164
-2   -10.580926
-3    -0.046590
-4    17.548077
-Name: Texas.Beneteau, dtype: float64
-Select Region: Alabama
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Ohio
-Most frequent make: Hunter
-leave one out in 4 sample(s)
-Square root of Evaluated MSE: 72169.98587351984
-0   -20.022831
-1    61.409815
-2    21.107761
-3   -29.727005
-Name: Ohio.Hunter, dtype: float64
-Select Region: Netherlands Antilles
-Most frequent make: Dufour
-leave one out in 1 sample(s)
-Select Region: Denmark
-Most frequent make: X-Yachts
-leave one out in 3 sample(s)
-Square root of Evaluated MSE: 83910.23203727687
-0    29.015627
-1    14.401657
-2   -16.311709
-Name: Denmark.X-Yachts, dtype: float64
-Select Region: Mississippi
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Oregon
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Connecticut
-Most frequent make: Beneteau
-leave one out in 4 sample(s)
-Square root of Evaluated MSE: 111925.15653392019
-0   -68.306306
-1   -24.968571
-2    16.556622
-3   -36.847704
-Name: Connecticut.Beneteau, dtype: float64
-Select Region: nan
-Most frequent make: Bavaria
-leave one out in 1 sample(s)
-Select Region: Grenada
-Most frequent make: Beneteau
-leave one out in 13 sample(s)
-Square root of Evaluated MSE: 47698.36652090998
-0     63.509772
-1    -29.431114
-2     20.983856
-3    -18.552234
-4    -33.893873
-5      2.240727
-6      4.980155
-7    -27.193130
-8     13.102226
-9     69.662850
-10     8.648279
-11   -26.947809
-12    26.746330
-Name: Grenada.Beneteau, dtype: float64
-Select Region: Virginia
-Most frequent make: Beneteau
-leave one out in 6 sample(s)
-Square root of Evaluated MSE: 59920.145024213976
-0   -27.230990
-1    19.802424
-2    46.655475
-3   -18.408008
-4    33.128753
-5   -17.410234
-Name: Virginia.Beneteau, dtype: float64
-Select Region: Hungary
-Most frequent make: Dufour
-leave one out in 1 sample(s)
-Select Region: Cork
-Most frequent make: Hunter
-leave one out in 1 sample(s)
-Select Region: Panama
-Most frequent make: Wauquiez
-leave one out in 3 sample(s)
-Square root of Evaluated MSE: 4484.565109104273
-0   -1.994247
-1    4.517221
-2   -2.375106
-Name: Panama.Wauquiez, dtype: float64
-Select Region: Belize
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Gibraltar
-Most frequent make: Island Packet
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 8.999999999883585
-0   -0.003216
-1    0.003216
-Name: Gibraltar.Island Packet, dtype: float64
-Select Region: Bulgaria
-Most frequent make: Bavaria
-leave one out in 1 sample(s)
-Select Region: South Carolina
-Most frequent make: Beneteau
-leave one out in 5 sample(s)
-Square root of Evaluated MSE: 67375.86706902062
-0   -41.591352
-1    47.676614
-2    86.527960
-3    -8.319245
-4   -21.464991
-Name: South Carolina.Beneteau, dtype: float64
-Select Region: Florida
-Most frequent make: Jeanneau
-leave one out in 19 sample(s)
-Square root of Evaluated MSE: 59479.568267929426
-0     -0.381081
-1    -31.256363
-2     19.625653
-3    -13.955543
-4    -10.241385
-5     31.217257
-6      6.772120
-7      9.563595
-8     -0.109331
-9     14.559624
-10   -19.723888
-11    -0.399505
-12   -19.151223
-13    -4.086714
-14    -6.303946
-15    25.199058
-16    35.160625
-17    55.192471
-18   -42.087344
-Name: Florida.Jeanneau, dtype: float64
-Select Region: United Kingdom
-Most frequent make: Jeanneau
-leave one out in 17 sample(s)
-Square root of Evaluated MSE: 32601.447402994825
-0     10.466729
-1     19.156123
-2    -16.744838
-3      6.322942
-4      2.109959
-5     -1.487036
-6     -1.463980
-7    -13.700477
-8     -5.819298
-9      2.353318
-10    -5.584267
-11    -3.886560
-12    15.906620
-13    16.965569
-14     1.062197
-15   -13.715129
-16     7.505661
-Name: United Kingdom.Jeanneau, dtype: float64
-Select Region: Saint Lucia
-Most frequent make: Bavaria
-leave one out in 1 sample(s)
-Select Region: Ireland
-Most frequent make: Hanse
-leave one out in 4 sample(s)
-Square root of Evaluated MSE: 142903.03858526895
-0   -13.348697
-1    -0.003894
-2     0.003894
-3   -83.963117
-Name: Ireland.Hanse, dtype: float64
-Select Region: Guadeloupe
-Most frequent make: Beneteau
-leave one out in 4 sample(s)
-Square root of Evaluated MSE: 109453.26202660723
-0   -70.257801
-1    -3.369844
-2     3.487363
-3   -87.438230
-Name: Guadeloupe.Beneteau, dtype: float64
-Select Region: British Virgin Islands
-Most frequent make: Beneteau
-leave one out in 26 sample(s)
-Square root of Evaluated MSE: 38100.88990948622
-0      26.218864
-1     -29.888382
-2       8.970935
-3      -7.931269
-4       9.520620
-5     -24.430565
-6     -16.398952
-7      -6.091590
-8      -1.942916
-9     -11.185998
-10     -0.113667
-11      5.406896
-12      9.507186
-13    -14.037617
-14     -7.847612
-15    127.034509
-16    -11.282714
-17     12.653476
-18    122.966941
-19     -8.846829
-20     11.904169
-21    -19.487722
-22     -6.186716
-23     -9.927520
-24    -28.351907
-25    -20.346097
-Name: British Virgin Islands.Beneteau, dtype: float64
-Select Region: Aruba
-Most frequent make: Beneteau
-leave one out in 1 sample(s)
-Select Region: Guatemala
-Most frequent make: Beneteau
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 18891.99999999997
-0   -12.437785
-1    14.204511
-Name: Guatemala.Beneteau, dtype: float64
-Select Region: California
-Most frequent make: Beneteau
-leave one out in 28 sample(s)
-Square root of Evaluated MSE: 30391.06027929503
-0     -8.048111
-1     14.693182
-2    -17.049949
-3     -6.682008
-4     -7.115463
-5    -14.900057
-6     -1.865490
-7     11.177434
-8     12.185572
-9     13.454938
-10    25.008784
-11    18.770818
-12     6.995248
-13   -14.998093
-14    -8.883862
-15    -7.783103
-16    -7.560202
-17     9.066756
-18    -4.862398
-19     6.247943
-20    -7.217078
-21     1.894285
-22     7.486674
-23     4.819289
-24     3.211266
-25     2.463518
-26    -0.987539
-27   -16.414866
-Name: California.Beneteau, dtype: float64
-Select Region: Estonia
-Most frequent make: Hanse
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 116619.99999999991
-0   -49.232718
-1    96.977257
-Name: Estonia.Hanse, dtype: float64
-Select Region: Cyprus
-Most frequent make: Hallberg-Rassy
-leave one out in 1 sample(s)
-Select Region: Turkey
-Most frequent make: Beneteau
-leave one out in 23 sample(s)
-Square root of Evaluated MSE: 65825.43014578009
-0     13.721095
-1      6.235330
-2    -20.751817
-3    -23.461743
-4    -26.530907
-5      9.744503
-6      6.414342
-7    -14.062879
-8     10.323126
-9     13.708343
-10    16.748943
-11     5.901026
-12     7.470965
-13    -9.955648
-14    24.176611
-15    19.158436
-16    26.432169
-17    -6.983260
-18    17.526738
-19    -6.510043
-20    -3.661469
-21   -40.439233
-22    14.495626
-Name: Turkey.Beneteau, dtype: float64
-Select Region: Slovenia
-Most frequent make: Jeanneau
-leave one out in 3 sample(s)
-Square root of Evaluated MSE: 173928.21235848608
-0    344.453909
-1     -0.003859
-2      0.003859
-Name: Slovenia.Jeanneau, dtype: float64
-Select Region: Netherlands
-Most frequent make: Dehler
-leave one out in 6 sample(s)
-Square root of Evaluated MSE: 42300.462066086526
-0   -24.041748
-1    33.605384
-2    16.076624
-3    10.227957
-4    -6.661723
-5    -6.661723
-Name: Netherlands.Dehler, dtype: float64
-Select Region: North Carolina
-Most frequent make: Hunter
-leave one out in 4 sample(s)
-Square root of Evaluated MSE: 8970332.041992461
-0     129.716929
-1      23.111394
-2     -14.780338
-3    6296.832963
-Name: North Carolina.Hunter, dtype: float64
-Select Region: Michigan
-Most frequent make: Jeanneau
-leave one out in 6 sample(s)
-Square root of Evaluated MSE: 50491.02304138231
-0     9.250697
-1   -16.618042
-2    -0.599428
-3    -1.349595
-4    22.080715
-5   -36.479841
-Name: Michigan.Jeanneau, dtype: float64
-Select Region: Dominican Republic
-Most frequent make: Bavaria
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 185999.99999999994
-0    -65.263158
-1    187.878788
-Name: Dominican Republic.Bavaria, dtype: float64
-Select Region: Hawaii
-Most frequent make: Beneteau
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 115000.00000000015
-0    71.875000
-1   -41.818182
-Name: Hawaii.Beneteau, dtype: float64
-Select Region: Jersey
-Most frequent make: Grand Soleil
-leave one out in 1 sample(s)
-Select Region: Saint Kitts and Nevis
-Most frequent make: Dufour
-leave one out in 1 sample(s)
-Select Region: Bahamas
-Most frequent make: Beneteau
-leave one out in 4 sample(s)
-Square root of Evaluated MSE: 26675.520432787926
-0   -16.376354
-1   -16.376354
-2    19.583402
-3    19.583402
-Name: Bahamas.Beneteau, dtype: float64
-Select Region: Greece
-Most frequent make: Beneteau
-leave one out in 85 sample(s)
-Square root of Evaluated MSE: 35402.9597199591
-0     -6.077676
-1     -8.732503
-2    -23.619235
-3     11.128220
-4     19.815509
-        ...    
-80   -23.501113
-81   -18.374198
-82     2.392393
-83   -17.908718
-84    -7.939299
-Name: Greece.Beneteau, Length: 85, dtype: float64
-Select Region: Massachusetts
-Most frequent make: Hunter
-leave one out in 3 sample(s)
-Square root of Evaluated MSE: 66608.9955282284
-0   -27.461097
-1    73.296695
-2   -38.405109
-Name: Massachusetts.Hunter, dtype: float64
-Select Region: New Jersey
-Most frequent make: Beneteau
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 41000.000000000204
-0    20.613374
-1   -17.090454
-Name: New Jersey.Beneteau, dtype: float64
-Select Region: Italy
-Most frequent make: Jeanneau
-leave one out in 64 sample(s)
-Square root of Evaluated MSE: 40995.32932073985
-0     -6.715049
-1     -4.417314
-2    -11.862806
-3     -9.321425
-4    -11.789393
-        ...    
-59    35.939060
-60   -25.701356
-61   -23.993391
-62    15.729585
-63    -9.302335
-Name: Italy.Jeanneau, Length: 64, dtype: float64
-Select Region: Illinois
-Most frequent make: Jeanneau
-leave one out in 3 sample(s)
-Square root of Evaluated MSE: 7983.137687790731
-0   -3.364172
-1    3.481288
-2   -9.742942
-Name: Illinois.Jeanneau, dtype: float64
-Select Region: Monaco
-Most frequent make: Bavaria
-leave one out in 1 sample(s)
-Select Region: Puerto Rico
-Most frequent make: Dufour
-leave one out in 1 sample(s)
-Select Region: Croatia
-Most frequent make: Jeanneau
-leave one out in 110 sample(s)
-Square root of Evaluated MSE: 42545.97467994416
-0     -42.896040
-1       7.150012
-2      14.199225
-3      17.280062
-4     -39.247294
-         ...    
-105   -13.393167
-106   -12.654181
-107   -12.650634
-108    -6.919487
-109    -5.181846
-Name: Croatia.Jeanneau, Length: 110, dtype: float64
-Select Region: Wisconsin
-Most frequent make: Jeanneau
-leave one out in 5 sample(s)
-Square root of Evaluated MSE: 14862.974190129515
-0   -5.388710
-1    2.477259
-2   -1.345989
-3   -7.577970
-4    8.402794
-Name: Wisconsin.Jeanneau, dtype: float64
-Select Region: Belgium
-Most frequent make: X-Yachts
-leave one out in 1 sample(s)
-Select Region: Georgia
-Most frequent make: Beneteau
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 3100.000000000233
-0    2.124743
-1   -2.080537
-Name: Georgia.Beneteau, dtype: float64
-Select Region: Switzerland
-Most frequent make: B-Yachts
-leave one out in 1 sample(s)
-Select Region: Saint Vincent and the Grenadines
-Most frequent make: Bavaria
-leave one out in 1 sample(s)
-Select Region: Louisiana
-Most frequent make: Beneteau
-leave one out in 4 sample(s)
-Square root of Evaluated MSE: 767.3385066184736
-0    0.614341
-1   -0.203946
-2    0.170273
-3   -0.382057
-Name: Louisiana.Beneteau, dtype: float64
-Select Region: Norway
-Most frequent make: Dufour
-leave one out in 1 sample(s)
-Select Region: Washington
-Most frequent make: Jeanneau
-leave one out in 8 sample(s)
-Square root of Evaluated MSE: 90093.5302018153
-0    -5.535987
-1   -25.835990
-2    35.794735
-3    14.449195
-4   -14.531736
-5    43.284371
-6    13.740726
-7   -32.257919
-Name: Washington.Jeanneau, dtype: float64
-Select Region: Maine
-Most frequent make: Morris
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 298000.0000000002
-0    59.959759
-1   -37.484277
-Name: Maine.Morris, dtype: float64
-Select Region: Romania
-Most frequent make: Beneteau
-leave one out in 2 sample(s)
-Square root of Evaluated MSE: 36440.000000000146
-0    23.111855
-1   -18.773054
-Name: Romania.Beneteau, dtype: float64
-{'New York', 'Trinidad and Tobago', 'Maryland', 'Portugal', 'West Indies', 'Rhode Island', 'Sweden', 'Spain', 'Malta', 'Germany', 'Sint Maarten (Dutch part)', 'France', 'Mexico', 'U.S. Virgin Islands', 'Martinique', 'Antigua and Barbuda', 'Texas', 'Alabama', 'Ohio', 'Netherlands Antilles', 'Denmark', 'Mississippi', 'Oregon', 'Connecticut', 'nan', 'Grenada', 'Virginia', 'Hungary', 'Cork', 'Panama', 'Belize', 'Gibraltar', 'Bulgaria', 'South Carolina', 'Florida', 'United Kingdom', 'Saint Lucia', 'Ireland', 'Guadeloupe', 'British Virgin Islands', 'Aruba', 'Guatemala', 'California', 'Estonia', 'Cyprus', 'Turkey', 'Slovenia', 'Netherlands', 'North Carolina', 'Michigan', 'Dominican Republic', 'Hawaii', 'Jersey', 'Saint Kitts and Nevis', 'Bahamas', 'Greece', 'Massachusetts', 'New Jersey', 'Italy', 'Illinois', 'Monaco', 'Puerto Rico', 'Croatia', 'Wisconsin', 'Belgium', 'Georgia', 'Switzerland', 'Saint Vincent and the Grenadines', 'Louisiana', 'Norway', 'Washington', 'Maine', 'Romania'}
-{'New York', 'Trinidad and Tobago', 'Maryland', 'Portugal', 'West Indies', 'Rhode Island', 'Sweden', 'Spain', 'Malta', 'Germany', 'Sint Maarten (Dutch part)', 'France', 'Mexico', 'U.S. Virgin Islands', 'Martinique', 'Antigua and Barbuda', 'Texas', 'Alabama', 'Ohio', 'Netherlands Antilles', 'Denmark', 'Mississippi', 'Oregon', 'Connecticut', 'nan', 'Grenada', 'Virginia', 'Hungary', 'Cork', 'Panama', 'Belize', 'Gibraltar', 'Bulgaria', 'South Carolina', 'Florida', 'United Kingdom', 'Saint Lucia', 'Ireland', 'Guadeloupe', 'British Virgin Islands', 'Aruba', 'Guatemala', 'California', 'Estonia', 'Cyprus', 'Turkey', 'Slovenia', 'Netherlands', 'North Carolina', 'Michigan', 'Dominican Republic', 'Hawaii', 'Jersey', 'Saint Kitts and Nevis', 'Bahamas', 'Greece', 'Massachusetts', 'New Jersey', 'Italy', 'Illinois', 'Monaco', 'Puerto Rico', 'Croatia', 'Wisconsin', 'Belgium', 'Georgia', 'Switzerland', 'Saint Vincent and the Grenadines', 'Louisiana', 'Norway', 'Washington', 'Maine', 'Romania'}
-{'New York', 'Trinidad and Tobago', 'Maryland', 'Portugal', 'West Indies', 'Rhode Island', 'Sweden', 'Spain', 'Malta', 'Germany', 'Sint Maarten (Dutch part)', 'France', 'Mexico', 'U.S. Virgin Islands', 'Martinique', 'Antigua and Barbuda', 'Texas', 'Alabama', 'Ohio', 'Netherlands Antilles', 'Denmark', 'Mississippi', 'Oregon', 'Connecticut', 'nan', 'Grenada', 'Virginia', 'Hungary', 'Cork', 'Panama', 'Belize', 'Gibraltar', 'Bulgaria', 'South Carolina', 'Florida', 'United Kingdom', 'Saint Lucia', 'Ireland', 'Guadeloupe', 'British Virgin Islands', 'Aruba', 'Guatemala', 'California', 'Estonia', 'Cyprus', 'Turkey', 'Slovenia', 'Netherlands', 'North Carolina', 'Michigan', 'Dominican Republic', 'Hawaii', 'Jersey', 'Saint Kitts and Nevis', 'Bahamas', 'Greece', 'Massachusetts', 'New Jersey', 'Italy', 'Illinois', 'Monaco', 'Puerto Rico', 'Croatia', 'Wisconsin', 'Belgium', 'Georgia', 'Switzerland', 'Saint Vincent and the Grenadines', 'Louisiana', 'Norway', 'Washington', 'Maine', 'Romania'}
-{'New York', 'Trinidad and Tobago', 'Maryland', 'Portugal', 'West Indies', 'Rhode Island', 'Sweden', 'Spain', 'Malta', 'Germany', 'Sint Maarten (Dutch part)', 'France', 'Mexico', 'U.S. Virgin Islands', 'Martinique', 'Antigua and Barbuda', 'Texas', 'Alabama', 'Ohio', 'Netherlands Antilles', 'Denmark', 'Mississippi', 'Oregon', 'Connecticut', 'nan', 'Grenada', 'Virginia', 'Hungary', 'Cork', 'Panama', 'Belize', 'Gibraltar', 'Bulgaria', 'South Carolina', 'Florida', 'United Kingdom', 'Saint Lucia', 'Ireland', 'Guadeloupe', 'British Virgin Islands', 'Aruba', 'Guatemala', 'California', 'Estonia', 'Cyprus', 'Turkey', 'Slovenia', 'Netherlands', 'North Carolina', 'Michigan', 'Dominican Republic', 'Hawaii', 'Jersey', 'Saint Kitts and Nevis', 'Bahamas', 'Greece', 'Massachusetts', 'New Jersey', 'Italy', 'Illinois', 'Monaco', 'Puerto Rico', 'Croatia', 'Wisconsin', 'Belgium', 'Georgia', 'Switzerland', 'Saint Vincent and the Grenadines', 'Louisiana', 'Norway', 'Washington', 'Maine', 'Romania'}
+---monohulled
+Normalizing year
+Corr (pearson): 0.964
+Corr (spearman): 0.989
+Corr (kendall): 0.943
+p: 0.000000008, significant
+[ 1.33159797e+04 -2.65442565e+07]
+Normalizing variant
+Testing sqrt of MSE: 37485.615, R^2: 0.936, MAPE: 12.32%
+Normalizing year
+Corr (pearson): 0.975
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000001, significant
+[ 9.03294052e+03 -1.80107283e+07]
+Normalizing variant
+Testing sqrt of MSE: 35975.863, R^2: 0.941, MAPE: 11.74%
+Normalizing year
+Corr (pearson): 0.972
+Corr (spearman): 1.000
+Corr (kendall): 1.000
+p: 0.000000002, significant
+[ 9.18034291e+03 -1.83073105e+07]
+Normalizing variant
+Testing sqrt of MSE: 35773.386, R^2: 0.941, MAPE: 11.66%
+Normalizing year
+Corr (pearson): 0.969
+Corr (spearman): 1.000
+Corr (kendall): 1.000
+p: 0.000000003, significant
+[ 9.28994481e+03 -1.85278282e+07]
+Normalizing variant
+Testing sqrt of MSE: 35730.075, R^2: 0.942, MAPE: 11.65%
+Normalizing year
+Corr (pearson): 0.967
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000004, significant
+[ 9.37477257e+03 -1.86985105e+07]
+Normalizing variant
+Testing sqrt of MSE: 35718.891, R^2: 0.942, MAPE: 11.65%
+Normalizing year
+Corr (pearson): 0.966
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000005, significant
+[ 9.44266782e+03 -1.88351168e+07]
+Normalizing variant
+Testing sqrt of MSE: 35715.491, R^2: 0.942, MAPE: 11.65%
+Normalizing year
+Corr (pearson): 0.965
+Corr (spearman): 0.996
+Corr (kendall): 0.981
+p: 0.000000006, significant
+[ 9.49806971e+03 -1.89465744e+07]
+Normalizing variant
+Testing sqrt of MSE: 35714.131, R^2: 0.942, MAPE: 11.66%
+[2023-04-03 15:59:14.003] Start to fit the model:
+[2023-04-03 15:59:14.003] Fitting cascade layer = 0 
+[2023-04-03 15:59:14.635] layer = 0  | Val MSE = 0.02818 | Elapsed = 0.632 s
+[2023-04-03 15:59:14.638] Fitting cascade layer = 1 
+[2023-04-03 15:59:15.495] layer = 1  | Val MSE = 0.02668 | Elapsed = 0.858 s
+[2023-04-03 15:59:15.498] Fitting cascade layer = 2 
+[2023-04-03 15:59:16.366] layer = 2  | Val MSE = 0.02741 | Elapsed = 0.868 s
+[2023-04-03 15:59:16.366] Early stopping counter: 1 out of 2
+[2023-04-03 15:59:16.368] Fitting cascade layer = 3 
+[2023-04-03 15:59:17.225] layer = 3  | Val MSE = 0.02740 | Elapsed = 0.857 s
+[2023-04-03 15:59:17.225] Early stopping counter: 2 out of 2
+[2023-04-03 15:59:17.225] Handling early stopping
+[2023-04-03 15:59:17.226] The optimal number of layers: 2
+[2023-04-03 15:59:17.229] Start to evalute the model:
+[2023-04-03 15:59:17.229] Evaluating cascade layer = 0 
+[2023-04-03 15:59:17.333] Evaluating cascade layer = 1 
+Testing sqrt of MSE: 24008.863, R^2: 0.974, MAPE: 7.34%
+---catamarans
+Normalizing year
+Corr (pearson): 0.960
+Corr (spearman): 0.971
+Corr (kendall): 0.867
+p: 0.000000015, significant
+[ 2.23430421e+04 -4.45294384e+07]
+Normalizing variant
+Testing sqrt of MSE: 65041.615, R^2: 0.896, MAPE: 10.84%
+Normalizing year
+Corr (pearson): 0.980
+Corr (spearman): 0.986
+Corr (kendall): 0.943
+p: 0.000000000, significant
+[ 2.18448614e+04 -4.35085664e+07]
+Normalizing variant
+Testing sqrt of MSE: 63611.345, R^2: 0.901, MAPE: 10.28%
+Normalizing year
+Corr (pearson): 0.977
+Corr (spearman): 0.986
+Corr (kendall): 0.943
+p: 0.000000000, significant
+[ 2.08834251e+04 -4.15715992e+07]
+Normalizing variant
+Testing sqrt of MSE: 63569.054, R^2: 0.901, MAPE: 10.21%
+Normalizing year
+Corr (pearson): 0.974
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000001, significant
+[ 2.01863565e+04 -4.01674912e+07]
+Normalizing variant
+Testing sqrt of MSE: 63529.923, R^2: 0.901, MAPE: 10.18%
+Normalizing year
+Corr (pearson): 0.972
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000001, significant
+[ 1.96575795e+04 -3.91021792e+07]
+Normalizing variant
+Testing sqrt of MSE: 63502.735, R^2: 0.901, MAPE: 10.17%
+Normalizing year
+Corr (pearson): 0.970
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000002, significant
+[ 1.92338532e+04 -3.82483512e+07]
+Normalizing variant
+Testing sqrt of MSE: 63486.934, R^2: 0.901, MAPE: 10.17%
+Normalizing year
+Corr (pearson): 0.969
+Corr (spearman): 0.979
+Corr (kendall): 0.924
+p: 0.000000003, significant
+[ 1.88823103e+04 -3.75398832e+07]
+Normalizing variant
+Testing sqrt of MSE: 63479.017, R^2: 0.901, MAPE: 10.16%
+[2023-04-03 15:59:19.869] Start to fit the model:
+[2023-04-03 15:59:19.869] Fitting cascade layer = 0 
+[2023-04-03 15:59:20.254] layer = 0  | Val MSE = 0.01672 | Elapsed = 0.385 s
+[2023-04-03 15:59:20.255] Fitting cascade layer = 1 
+[2023-04-03 15:59:20.768] layer = 1  | Val MSE = 0.01539 | Elapsed = 0.514 s
+[2023-04-03 15:59:20.770] Fitting cascade layer = 2 
+[2023-04-03 15:59:21.290] layer = 2  | Val MSE = 0.01666 | Elapsed = 0.519 s
+[2023-04-03 15:59:21.290] Early stopping counter: 1 out of 2
+[2023-04-03 15:59:21.291] Fitting cascade layer = 3 
+[2023-04-03 15:59:21.807] layer = 3  | Val MSE = 0.01723 | Elapsed = 0.516 s
+[2023-04-03 15:59:21.807] Early stopping counter: 2 out of 2
+[2023-04-03 15:59:21.807] Handling early stopping
+[2023-04-03 15:59:21.807] The optimal number of layers: 2
+[2023-04-03 15:59:21.809] Start to evalute the model:
+[2023-04-03 15:59:21.809] Evaluating cascade layer = 0 
+[2023-04-03 15:59:21.864] Evaluating cascade layer = 1 
+Testing sqrt of MSE: 55820.097, R^2: 0.924, MAPE: 4.98%
+==testing hong kong==
+--mono--
+Testing sqrt of MSE: 68405.933, R^2: 0.885, MAPE: 8.70%
+                 Make       Variant  ...        yscore     PredPrice
+0            Beneteau  Oceanis 34.1  ...  229690.72900  4.536848e+05
+1            Beneteau  Oceanis 30.1  ...  255573.86280  5.553723e+05
+2            Beneteau    Oceanis 38  ...  133235.64550  2.436190e+05
+3             J Boats           111  ...  125525.88880  2.534426e+05
+4            Beneteau      First 36  ...  255573.86280  6.484539e+05
+5             M Boats            40  ...  121178.22470  1.933901e+05
+6            Beneteau  Oceanis 40.1  ...  255573.86280  4.625497e+05
+7            Beneteau      Sense 43  ...  125525.88880  2.740194e+05
+8            Beneteau      First 44  ...  255573.86280  6.713363e+05
+9            Beneteau  Oceanis 46.1  ...  255573.86280  5.590279e+05
+10           Beneteau  Oceanis 51.1  ...  177607.99190  4.345823e+05
+11  Judel And Vrolijk          Tp52  ...   91218.80662  3.487319e+05
+12           Beneteau  Oceanis 51.1  ...  255573.86280  1.081651e+06
+13        Nautor Swan            54  ...  177456.70180  6.101647e+05
+14           X-Yachts          X-55  ...  113218.80660  4.212855e+05
+15        Nautor Swan       Swan 60  ...  133235.64550  5.009783e+05
+
+[16 rows x 15 columns]
+0     0.003736
+1     0.000831
+2     0.099364
+3     0.013771
+4     0.001071
+5     0.368872
+6     0.013397
+7     0.053921
+8     0.029578
+9     0.002735
+10    0.019831
+11    0.103517
+12    0.196259
+13    0.207578
+14    0.107591
+15    0.170703
+dtype: float64
+4679371686.244134 43496968282.5625 16
+--cata--
+[2023-04-03 15:59:23.666] Start to fit the model:
+[2023-04-03 15:59:23.666] Fitting cascade layer = 0 
+[2023-04-03 15:59:24.070] layer = 0  | Val MSE = 0.01672 | Elapsed = 0.403 s
+[2023-04-03 15:59:24.071] Fitting cascade layer = 1 
+[2023-04-03 15:59:24.589] layer = 1  | Val MSE = 0.01539 | Elapsed = 0.517 s
+[2023-04-03 15:59:24.590] Fitting cascade layer = 2 
+[2023-04-03 15:59:25.115] layer = 2  | Val MSE = 0.01666 | Elapsed = 0.525 s
+[2023-04-03 15:59:25.116] Early stopping counter: 1 out of 2
+[2023-04-03 15:59:25.117] Fitting cascade layer = 3 
+[2023-04-03 15:59:25.637] layer = 3  | Val MSE = 0.01723 | Elapsed = 0.521 s
+[2023-04-03 15:59:25.637] Early stopping counter: 2 out of 2
+[2023-04-03 15:59:25.637] Handling early stopping
+[2023-04-03 15:59:25.638] The optimal number of layers: 2
+[2023-04-03 15:59:25.641] Start to evalute the model:
+[2023-04-03 15:59:25.641] Evaluating cascade layer = 0 
+[2023-04-03 15:59:25.652] Evaluating cascade layer = 1 
+Testing sqrt of MSE: 60029.904, R^2: 0.849, MAPE: 7.18%
+              Make         Variant  Year  ...       yscore      rscore     PredPrice
+0             Bali        CATSPACE  2018  ...  593017.3817  537162.866  4.403785e+05
+1  Fountaine Pajot        Tanna 47  2018  ...  593017.3817  537162.866  5.889462e+05
+2           Lagoon             450  2019  ...  616781.8899  537162.866  5.942629e+05
+3           Lagoon             450  2019  ...  616781.8899  537162.866  6.040384e+05
+4             Bali             4.4  2018  ...  593017.3817  537162.866  6.024709e+05
+5             Bali             4.6  2018  ...  593017.3817  537162.866  5.776182e+05
+6             Bali             4.8  2016  ...  509586.6972  537162.866  5.855373e+05
+7        McConaghy  MC53 Catamaran  2019  ...  616781.8899  537162.866  1.002361e+06
+
+[8 rows x 16 columns]
+0    0.000556
+1    0.047099
+2    0.132463
+3    0.078640
+4    0.046313
+5    0.168216
+6    0.086785
+7    0.014273
+dtype: float64
+3603589357.604362 27202473929.42857 8

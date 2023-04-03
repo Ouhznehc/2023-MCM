@@ -1,0 +1,18 @@
+Normalizing year
+Corr (pearson): 0.964
+Corr (spearman): 0.989
+Corr (kendall): 0.943
+[ 1.33159797e+04 -2.65442565e+07]
+The average inpurity in ['Variant', 'CRS'] of the sample after normalization is 1716.88
+Inpurity rate: 0.47%
+The average inpurity in ['CRS'] of the sample after normalization is 15152.86
+Inpurity rate: 6.78%
+The average inpurity in ['Variant'] of the sample after normalization is 2601.51
+Inpurity rate: 1.07%
+Normalizing region
+The average inpurity in ['Variant', 'CRS'] of the sample after normalization is 1889.88
+Inpurity rate: 0.48%
+The average inpurity in ['CRS'] of the sample after normalization is 14878.26
+Inpurity rate: 6.29%
+The average inpurity in ['Variant'] of the sample after normalization is 3379.97
+Inpurity rate: 1.32%

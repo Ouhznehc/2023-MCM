@@ -46,9 +46,11 @@ class regression:
       y_pred = pd.concat([y_pred, pd.Series(self.model.predict(X_test))])
     y_pred.index = self.y.index
     y_pred.name = "pred price"
-    pred_frame = pd.concat([y_pred.apply(lambda x : math.exp(x)), self.y.apply(lambda x : math.exp(x))], axis='columns')
+    pred_frame = pd.concat([y_pred, self.y], axis='columns')
+    # pred_frame = pd.concat([y_pred.apply(lambda x : math.exp(x)), self.y.apply(lambda x : math.exp(x))], axis='columns')
     residual = pred_frame.apply((lambda x : (x.iloc[0] - x.iloc[1]) * 100 / x.iloc[1]), axis="columns")
     residual.index = range(len(residual.index))
     # residual.plot()
-    print("Square root of Evaluated MSE:", math.sqrt(mean_squared_error(self.y.apply(lambda x : math.exp(x)), y_pred.apply(lambda x : math.exp(x)))))
+    # print("Square root of Evaluated MSE:", math.sqrt(mean_squared_error(self.y.apply(lambda x : math.exp(x)), y_pred.apply(lambda x : math.exp(x)))))
+    print("Square root of Evaluated MSE:", math.sqrt(mean_squared_error(self.y, y_pred)))
     return residual
