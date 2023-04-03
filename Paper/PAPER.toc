@@ -16,14 +16,14 @@
 \contentsline {subsection}{\numberline {4.2}Model Accuracy Analysis}{11}{subsection.0.4.2}%
 \contentsline {section}{\numberline {5}Regional Effect Analysis}{12}{section.0.5}%
 \contentsline {section}{\numberline {6}The Applicability of The Prediction Model in Hong Kong}{12}{section.0.6}%
-\contentsline {section}{\numberline {7}Extended Inferences or Conclusion}{13}{section.0.7}%
-\contentsline {section}{\numberline {8}Strengths and Weaknesses}{13}{section.0.8}%
-\contentsline {subsection}{\numberline {8.1}Strengths}{13}{subsection.0.8.1}%
-\contentsline {subsection}{\numberline {8.2}Weaknesses}{13}{subsection.0.8.2}%
-\contentsline {section}{\numberline {9}Further Improvements}{14}{section.0.9}%
-\contentsline {subsection}{\numberline {9.1}Lasso Regression Update for Model}{14}{subsection.0.9.1}%
-\contentsline {subsection}{\numberline {9.2}Better utilization of the Deep Forest}{15}{subsection.0.9.2}%
-\contentsline {section}{\numberline {10}Conclusion}{16}{section.0.10}%
-\contentsline {section}{Report}{17}{section.0.11}%
-\contentsline {section}{References}{18}{section.1.11}%
+\contentsline {section}{\numberline {7}Extended Inferences or Conclusion}{14}{section.0.7}%
+\contentsline {section}{\numberline {8}Strengths and Weaknesses}{14}{section.0.8}%
+\contentsline {subsection}{\numberline {8.1}Strengths}{14}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {8.2}Weaknesses}{15}{subsection.0.8.2}%
+\contentsline {section}{\numberline {9}Further Improvements}{15}{section.0.9}%
+\contentsline {subsection}{\numberline {9.1}Lasso Regression Update for Model}{15}{subsection.0.9.1}%
+\contentsline {subsection}{\numberline {9.2}Better utilization of the Deep Forest}{16}{subsection.0.9.2}%
+\contentsline {section}{\numberline {10}Conclusion}{17}{section.0.10}%
+\contentsline {section}{Report}{19}{section.0.11}%
+\contentsline {section}{References}{20}{section.1.11}%
 \contentsfinish 

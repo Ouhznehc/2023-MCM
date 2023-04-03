@@ -29,19 +29,25 @@
     It also analyzes the impact of different factors and indicators on prices. 
     Finally, the model will be applied to the used sailboat market in Hong Kong to provide a reasonable and accurate pricing rule.
 
-    For Data Exploration, \dots
+    For Data Exploration, we first try to preprocess the data with \textbf{Adaptive Density-Based Clustering} and \textbf{Linear Interpolation} methods.
+    Moreover, we use the web strapper to fetch more data to expand the dimensions of our data. Simple statistical analysis shows that sub-indicators center around the \emph{year}, \emph{variant}, and \emph{region}.
+    
+    For Problem(a), We adopt a \textbf{Heuristic Multilevel Regression Model} inspired by the conclusion drawn from data analysis, and introduce the concept of \textbf{impurity} to heuristically evaluate interrelation among variables, avoid bias by introducing \textbf{feedback and renormalization}.
+    And our model achieves good precision on both the train set and the test set.
 
-    For Problem(a), \dots
+    For Problem(b), 
+    We apply \textbf{statistic analysis} of the distribution of the average price to find the regions' impacts.
+    After using \textbf{normalization techniques} and \textbf{impurity analysis}, it can be concluded that the regional effect is not significant across variants and primarily takes effect by featuring variants of different prices.
+    Practically and statistically, the GDP per capita is found of a linear correlation with the average variant prices of a region with \textbf{linear correlation coefficient} and \textbf{p-testing}.
 
-    For Problem(b), \dots
+    For Problem(c),
+    our model can be fitted into the Hong Kong market using our model's \textbf{regional sub-indicators}.
+    Besides, we spot a significant underestimation of our model when fitting it into Hong Kong's market in the subset of the catamarans' market.
+    however, this regional effect is not found in the subset of the monohulled sailboats market. 
+    
+    For Problem(d), we find interesting patterns between the length and the region.
 
-    For Problem(c), \dots
-
-    For Problem(d), \dots
-
-    For Problem(e), \dots
-
-    Finally, we conducted an analysis of the strengths and weaknesses of our model, as well as its sensitivity. The results demonstrate that our model exhibits high levels of robustness, precision, and accuracy. After that, a report is attached.
+    Finally, we conducted an analysis of the strengths and weaknesses of our model. Besides, we further \textbf{optimized the model} and the results demonstrate that our model exhibits high levels of robustness, precision, and accuracy. After that, a report is attached.
 
 
 
@@ -49,7 +55,7 @@
     % 美赛论文中无需注明关键字。若您一定要使用，
     % 请将以下两行的注释号 '%' 去除，以使其生效
     \vspace{5pt}
-    \textbf{Keywords}:  Linear interpolation, Adaptive Density-Based Clustering, Heuristic Hierarchical Multiple Regression, Deep Forest Model,  Machine Learning, Analysis of Variance.
+    \textbf{Keywords}: Used Sailboat Pricing, Adaptive Density-Based Clustering, Heuristic Hierarchical Multiple Regression, Feedback Model, Deep Forest Model, Analysis of Variance.
  
 
 \end{abstract}
@@ -107,7 +113,7 @@ Therefore, brokers urgently need a tool to assist them in making more reasonable
 \end{figure}
 Our team began by meticulously cleaning, expanding, and pre-analyzing the dataset using \textbf{Adaptive Density-Based Clustering} and \textbf{Linear interpolation} techniques. These methods allowed us to identify patterns and trends in the data, preparing it for subsequent modeling.
 
-Then, we utilized a \textbf{Hierarchical Multiple Regression} to abstractly express the Region Effect and Variant Effect, to achieve the continuous representation of the two discrete variables, Region and Variant. Next, we applied \textbf{Linear Regression} to obtain the relationship between Year, Region Effect, Variant Effect, and Price. This approach helped us capture the interactions between these variables and their influence on the pricing.
+Then, we utilized a \textbf{Hierarchical Multiple Regression} to abstractly express the Region's Effect and Variant's Effect, to achieve the continuous representation of the two discrete variables, Region and Variant. Next, we applied \textbf{Linear Regression} to obtain the relationship between Year, Region Effect, Variant Effect, and Price. This approach helped us capture the interactions between these variables and their influence on the pricing.
 
 Following this, we employed a \textbf{Deep Forest Model} to estimate the relationship between region and variant indicators and their respective effects. This advanced ensemble learning technique allowed us to predict the effect of unknown regions and variants, which in turn enabled us to further predict their prices.
 
@@ -303,7 +309,7 @@ This adaptive heuristic approach has a significant impact on the accuracy of the
 \subsubsection{Model 2 \textemdash  Deep Forest Model}
 
 
-However, the regression prediction based on \emph{Model 1} is incomplete, as \emph{Model 1} requires the variant and region of the data being predicted to have appeared in the dataset before. In practice, the variant and region might be unseen by the Model. For instance, in the third question, \emph{Model 1} cannot predict the prices in Hong Kong since the Model has not assessed the region effect for Hong Kong. Therefore, we employed the Deep Forest algorithm to establish \emph{Model 2}.
+However, the regression prediction based on \emph{Model 1} is incomplete, as \emph{Model 1} requires the variant and region of the data being predicted to have appeared in the dataset before. In practice, the variant and region might be unseen by the Model. For instance, in the third question, \emph{Model 1} cannot predict the prices in Hong Kong since the Model has not assessed the region's effect for Hong Kong. Therefore, we employed the Deep Forest algorithm to establish \emph{Model 2}.
 
 \begin{figure}[htbp]
     \centering
@@ -345,8 +351,14 @@ where:
     $$\text{var}(\textbf{X})=\frac{\sum_{i=1}^{n}(\textbf{X}_i-\overline{\textbf{X}})(\textbf{X}_i-\overline{\textbf{X}})}{n-1}$$
     $$\text{cov}(\textbf{X},\textbf{Y})=\frac{\sum_{i=1}^{n}(\textbf{X}_i-\overline{\textbf{X}})(\textbf{Y}_i-\overline{\textbf{Y}})}{n-1}$$
 
+\begin{figure}[htbp]
+        \centering
+        \includegraphics[width=.8\textwidth]{accuracy.jpg}
+        \caption{Model Fitting Accuracy}\label{fig:accuracy}
+\end{figure}
 
-    \begin{table}[htbp]
+
+\begin{table}[htbp]
         \centering
         \begin{tabular}{c|c|c}
         Train& Cata& Mono \\
@@ -379,7 +391,7 @@ where:
             \end{tabular}
         \caption{Accuracy of Train Set, Test Set and HK Set}
         \label{tab:Accuracy}
-    \end{table}
+\end{table}
 
 
 
@@ -391,28 +403,41 @@ we can clearly see the effect of each region(see Figure \ref{fig:region_effect})
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{region_effect.png}
-    \caption{Region Effect}\label{fig:region_effect}
+    \caption{Region's Effect}\label{fig:region_effect}
 \end{figure}
 
 
 \section{The Applicability of The Prediction Model in Hong Kong}
 When applying our model to the Hong Kong region, 
 we first try to obtain the indicators for the used sailboats. 
-For Hong Kong, we start by using \emph{Model 2} to determine the Region Effect, leveraging the area's GDP per capita data.
+For Hong Kong, we start by using \emph{Model 2} to determine the Region's Effect, leveraging the area's GDP per capita data.
 
 If the predicted Variant is present in the training set, 
-we can directly use \emph{Model 1} to estimate the pricing by incorporating the Region Effect, Variant Effect, and Year. 
-However, if the predicted Variant is not in the training set, we first need to use \emph{Model 2} to obtain the Variant Effect by considering factors such as beam, draft, and displacement. 
-Once the Variant Effect is determined, we can then employ \emph{Model 1} to make the final price prediction.
+we can directly use \emph{Model 1} to estimate the pricing by incorporating the Region's Effect, Variant's Effect, and Year. 
+However, if the predicted Variant is not in the training set, we first need to use \emph{Model 2} to obtain the Variant's Effect by considering factors such as beam, draft, and displacement. 
+Once the Variant's Effect is determined, we can then employ \emph{Model 1} to make the final price prediction.
 
 This two-step approach enables us to adapt our models to different regions like Hong Kong and successfully predict used sailboat prices. 
 By utilizing both \emph{Model 1} and \emph{Model 2} in tandem, we can account for regional influences, specific variant characteristics, 
 and the age of the sailboat to provide accurate and reliable pricing estimates.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.8\textwidth]{accuracy.jpg}
+    \caption{Model Fitting Accuracy in HongKong}\label{fig:HongKong}
+\end{figure}
+
+Interestingly, this regional effect is not observed in the subset of the monohulled sailboats market, suggesting that there are unique factors at play when it comes to the catamarans' market in Hong Kong. Upon further examination, we have deduced that the reason behind this discrepancy is likely due to Hong Kong's flourishing tourism industry.
+
+Catamarans are widely regarded as superior to monohulled sailboats for travelers, offering a more stable and comfortable platform for sightseeing, relaxation, and entertainment. With the increasing number of tourists visiting Hong Kong, it is no surprise that the demand for catamarans has surged, thus contributing to the underestimation of our model's effectiveness in this particular market segment.
+
+In conclusion, while our model has shown promising results in various aspects of the Hong Kong market, it is essential to recognize the unique regional factors that may affect its performance in certain subsets. By refining our model to account for these factors, we can ensure a more accurate and robust representation of the market dynamics at play. In doing so, our model will be better equipped to guide businesses and investors in making informed decisions, ultimately leading to a more prosperous and thriving economy in Hong Kong.
 
 
 \section{Extended Inferences or Conclusion}
+Upon conducting a thorough analysis of the relationship between various variables, excluding the average price and region, using linear correlation analysis tools, we have uncovered some intriguing patterns between the boat length and the region.
 
+The analysis results reveal that people in European regions tend to prefer sailing longer boats, while individuals in the Caribbean area are fond of navigating more extended catamarans.
 
 \section{Strengths and Weaknesses}
 \subsection{Strengths}
@@ -439,7 +464,7 @@ Due to the difficulty in obtaining geographical data and the challenge of analyz
 \section{Further Improvements}
 Although our Model has been optimized over several days, evolving from a simple decision tree to an organic combination of Heuristic Hierarchical Multiple Regression and Deep Forest, both \emph{Model 1} and \emph{Model 2} have produced excellent results in price prediction. However, during each iteration, we still only used a simple regression model, with accuracy being the result of iteration and heuristic learning. Upon reviewing the model, we identified the following two issues:
 \begin{itemize}
-    \item When fitting the Variant Effect, we lost regional information.
+    \item When fitting the Variant's Effect, we lost regional information.
     \item Combined Make and Variant, causing the model to overlook the premium issue between different Makes.
 \end{itemize}
 \subsection{Lasso Regression Update for Model}
@@ -462,11 +487,11 @@ Assume $\beta_i=\{\beta_{i1},\beta_{i2},\beta_{i3}\}$After introducing Lasso Reg
 This process is similar to the basic model idea. We also tried to update the model using Lasso Regression and re-predict the price. However, due to the lack of precision in the design matrix and the difficulty in controlling the regularization strength, the update was unsuccessful. Nonetheless, based on the initial improved model results and the Lasso Regression loss function, we can predict that the improved model will address multicollinearity issues for correlated Variant and Region variables.
 
 \subsection{Better utilization of the Deep Forest}
-As previously mentioned, we used Lasso Regression to address the issue of losing regional information when fitting the Variant Effect. For the second issue, we considered fully utilizing Deep Forest by applying it to the regression process of \emph{Model 1}. Since Random Forest employs random sampling and feature selection, it can reduce the influence between correlated variables, thereby reducing multicollinearity problems, enhancing the stability and predictive accuracy of the regression model. Therefore, we do not need to combine Make and Variant into a single Variant variable for regression analysis. Instead, we can input all the screened variables into Deep Forest, allowing the model to self-prune and fit, enhancing robustness and generalization capabilities,then we get the graph below:
+As previously mentioned, we used Lasso Regression to address the issue of losing regional information when fitting the Variant's Effect. For the second issue, we considered fully utilizing Deep Forest by applying it to the regression process of \emph{Model 1}. Since Random Forest employs random sampling and feature selection, it can reduce the influence between correlated variables, thereby reducing multicollinearity problems, enhancing the stability and predictive accuracy of the regression model. Therefore, we do not need to combine Make and Variant into a single Variant variable for regression analysis. Instead, we can input all the screened variables into Deep Forest, allowing the model to self-prune and fit, enhancing robustness and generalization capabilities,then we get the graph below:
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=.8\textwidth]{update.png}
+    \includegraphics[width=.7\textwidth]{update.png}
     \caption{Optimizing Model Performance}\label{fig:update}
 \end{figure}
 
@@ -502,18 +527,25 @@ In summary, our study has successfully developed a powerful and versatile model 
 \noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
 \end{flushleft}
 
-In the memo, we want to introduce you an alternate typesetting program to the prevailing MS Word: \textbf{\LaTeX}. In fact, the history of \LaTeX\ is even longer than that of MS Word. In 1970s, the famous computer scientist Donald Knuth first came out with a typesetting program, which named \TeX\ \ldots
+\noindent \textbf{\emph{Part One - Model Accuracy}}
 
-Firstly, \ldots
+The two line charts presented above use the actual prices as the x-axis and the predicted values from our model as the y-axis. The fit between the line and the $y=x$ equation demonstrates the accuracy of our model. Clearly, our model is highly effective in predicting the prices of used boats worldwide. We have tested the model's accuracy, achieving 94.91\% for Catamarans and 92.61\% for Monohulled Sailboats. Thus, our model is fundamentally accurate in its price predictions.
 
-Secondly, \ldots
+\noindent \textbf{\emph{Part Two - Analysis of Variance}}
 
-Lastly, \ldots
+Figure 3 reveals a strong linear correlation between price and year. The model shows that the Region's Effect influences market prices by affecting boat types. In particular, areas with higher per capita GDP tend to buy more expensive boat types, leading to higher average prices for used boats in these regions.
 
-According to all those mentioned above, it is really worth to have a try on \LaTeX! 
+\noindent \textbf{\emph{Part Three - Model of Hong Kong}}
+
+Comparing the slopes of the two regression models in Figure 4, we see that regional economic conditions impact both boat types. However, in Hong Kong, we found that the extra-regional effect is not found in the subset of the monohulled sailboats market. We infer that this is probably because of Hong Kong's prosperous tourism -- catamarans are better than monohulled sailboats for travelers.
+
+\noindent \textbf{\emph{Part Four - Interesting Conclusion}}
+
+Based on the two bar charts, we have drawn an interesting conclusion: the analysis results reveal that people in European regions tend to prefer sailing longer boats, while individuals in the Caribbean area are fond of navigating more extended catamarans. This phenomenon may be related to local geography and culture.
 
 \noindent\rule[0.25\baselineskip]{\textwidth}{2pt} 
 \end{letter}
+
 \clearpage
 
 % 参考文献，此处以 MLA 引用格式为例
