@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  3 APR 2023 00:13
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  3 APR 2023 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -688,19 +688,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 19.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 52.
+(Font)              scaled to size 12.0pt on input line 54.
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 58.
+(Font)              scaled to size 20.74pt on input line 60.
 Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 20.74pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Regular.otf
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 58.
+(Font)              scaled to size 17.28pt on input line 60.
 Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 17.28pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Regular.otf
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 58.
+(Font)              scaled to size 17.28pt on input line 60.
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 17.28pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
  [1
@@ -759,7 +759,7 @@ Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 28.
+(Font)              scaled to size 8.0pt on input line 27.
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 8.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
 )
@@ -767,16 +767,16 @@ Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tn
 \openout5 = `PAPER.toc'.
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 58.
+(Font)              scaled to size 10.95pt on input line 60.
 Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.95pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Regular.otf
  [2]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 64.
+(Font)              scaled to size 14.4pt on input line 66.
 Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Regular.otf
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 64.
+(Font)              scaled to size 14.4pt on input line 66.
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
  [3
@@ -784,46 +784,57 @@ Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tn
 ]
 File: ./img//OurWork.png Graphic file (type bmp)
 <./img//OurWork.png>
+ [4]
+Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+ -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
 File: ./img//Data.png Graphic file (type bmp)
 <./img//Data.png>
- [4]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 147.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 166.
 Requested font "[lmmonolt10-bold]:" at 12.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf
+ [5] [6]
 File: ./img//error_data.png Graphic file (type bmp)
 <./img//error_data.png>
- [5]
+Requested font "[lmmono12-regular]:" at 12.0pt
+ -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf
+ [7]
 File: ./img//monohulled_price_year.png Graphic file (type bmp)
 <./img//monohulled_price_year.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 182.
+(Font)              scaled to size 10.0pt on input line 238.
 Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Regular.otf
 File: ./img//catamaran_price_year.png Graphic file (type bmp)
 <./img//catamaran_price_year.png>
-File: ./img//Model1.png Graphic file (type bmp)
-<./img//Model1.png>
- [6]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 214.
+(Font)              scaled to size 12.0pt on input line 266.
 Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Italic.otf
-Requested font "[lmmono12-regular]:" at 12.0pt
- -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf
-File: ./img//Deep_forest.png Graphic file (type bmp)
-<./img//Deep_forest.png>
- [7]
+ [8]
+File: ./img//Model1.png Graphic file (type bmp)
+<./img//Model1.png>
+File: ./img//Hierarchical.png Graphic file (type bmp)
+<./img//Hierarchical.png>
+ [9]
+File: ./img//Deep_forest1.png Graphic file (type bmp)
+<./img//Deep_forest1.png>
+ [10]
+File: ./img//Deep_forest2.png Graphic file (type bmp)
+<./img//Deep_forest2.png>
+ [11]
 File: ./img//Model2.png Graphic file (type bmp)
 <./img//Model2.png>
-Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 6.0pt
- -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
- [8] [9]
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 326.
-Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 8.0pt
- -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Italic.otf
- [10
+File: ./img//region_effect.png Graphic file (type bmp)
+<./img//region_effect.png>
+ [12] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 451--453
+
+ []
+
+[16
+
+] [17
 
 ]
 Requested font "cmmi12" at 17.28pt
@@ -846,11 +857,11 @@ Requested font "cmr17" at 17.28pt
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 351.
+(Font)              scaled to size 10.95pt on input line 497.
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.95pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 351.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 497.
 Requested font "[lmmonolt10-bold]:" at 10.95pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf
 Requested font "[lmmono10-regular]:" at 10.95pt
@@ -867,19 +878,19 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ) 
 AED: lastpage setting LastPage
-[11
+[18
 
 ] (./PAPER.aux)
 Package rerunfilecheck Info: File `PAPER.out' has not changed.
-(rerunfilecheck)             Checksum: 99CFF4C2259BD459898750677B8729E7;5326.
+(rerunfilecheck)             Checksum: 446A69BE91F2A88806780636098F431E;5159.
  ) 
 Here is how much of TeX's memory you used:
- 18572 strings out of 476179
- 347674 string characters out of 5809544
- 894624 words of memory out of 5000000
- 38994 multiletter control sequences out of 15000+600000
- 479465 words of font info for 87 fonts, out of 8000000 for 9000
+ 18614 strings out of 476179
+ 348389 string characters out of 5809544
+ 895296 words of memory out of 5000000
+ 39034 multiletter control sequences out of 15000+600000
+ 479457 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,12n,99p,746b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,13n,99p,748b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PAPER.pdf (11 pages).
+Output written on PAPER.pdf (18 pages).
