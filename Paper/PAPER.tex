@@ -10,7 +10,7 @@
 %\usepackage{mathpazo}  % 这是 COMAP 官方杂志采用的更好看的 Palatino 字体，可替代以上的 mathptmx 宏包
 \usepackage{newtxtext}
 \newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}} 
-\title{Title}  % 标题
+\title{Pricing Used Sailboats : A Combination Model Based on Heuristic Multilevel Regression and Deep Forest}  % 标题
 
 % 如需要修改题头（默认为 MCM/ICM），请使用以下命令（此处修改为 MCM）
 \renewcommand{\contest}{MCM}
@@ -32,7 +32,7 @@
     For Data Exploration, we first try to preprocess the data with \textbf{Adaptive Density-Based Clustering} and \textbf{Linear Interpolation} methods.
     Moreover, we use the web strapper to fetch more data to expand the dimensions of our data. Simple statistical analysis shows that sub-indicators center around the \emph{year}, \emph{variant}, and \emph{region}.
     
-    For Problem(a), We adopt a \textbf{Heuristic Multilevel Regression Model} inspired by the conclusion drawn from data analysis, and introduce the concept of \textbf{impurity} to heuristically evaluate interrelation among variables, avoid bias by introducing \textbf{feedback and renormalization}.
+    For Problem(a), Inspired by the previous conclusion, we adopt a \textbf{Heuristic Multilevel Regression Model} for making the three \emph{discrete} variables \emph{continuous}, introduce the concept of \textbf{impurity} to heuristically evaluate interrelation among variables, and avoid bias by introducing \textbf{feedback and renormalization}. Finally, we use \textbf{Deep Forest} to regress them to the price.
     And our model achieves good precision on both the train set and the test set.
 
     For Problem(b), 
@@ -160,15 +160,23 @@ adequately justified.
     \hline
     $\hat{\beta}$ & The estimated value of the regression coefficients\\
     \hline
-    $X, Y$ & The variables for which the correlation is to be tested \\
-    \hline
     $P$ & Measured value \\
     \hline
     $Q$ & Simulated value \\ 
+    \hline
+    $\alpha$ & p-value significance level \\
+    \hline
+    $df$ & freedom \\
+    \hline
+    $s$ & standard deviation \\
+    \hline 
+    $T$ & t-distribution \\
+
 	\bottomrule
 \end{tabular}
 \end{center}
 \end{table}
+
 \section{Data Exploration}
 
 \begin{figure}[htbp]
@@ -274,8 +282,17 @@ Despite these challenges, we can still extract some relatively straightforward i
 
 \subsection{The Establishment of The Model}
 \subsubsection{Model 1 \textemdash  Heuristic Hierarchical Multiple Regression}
+Inspired by the conclusion drawn from data analysis, we adopt a multilevel heuristic model that utilizes the purity of the samples grouped by specific variables.  We introduce impurity to model a variable's independence from other variables.
 
-\emph{Model 1}, as illustrated in Figure \ref{fig:Model1}, is specifically designed to predict prices by taking into account input variables such as Year, Region, and Variant. To achieve accurate predictions, this model incorporates a heuristic hierarchical multiple regression approach, which distinguishes it from conventional regression methods. This innovative technique allows for a more nuanced understanding of the relationships between variables, ultimately leading to improved performance and reliability.
+To be specific, we begin with the year variable mentioned above.
+
+The impurity by a variable can be measured by the weighted mean variance of all groups divided by the variable.
+
+Unavoidably, the initial impurity will damage our model's accuracy. For example, we have supposed that the year variable is independent of other variables for the first round of normalization (otherwise we cannot resolve the problem at the beginning), making our normalizing coefficient of this variable biased.
+
+Therefore, we introduce the feedback model into our model. To be exact,   after the first round has been completed, compared to the initial state, we have more information about the year, variant, and region factors' effect. Therefore, we repeatedly renormalize the factors to gain a more accurate coefficient (factors' effect).
+
+Specifically, \emph{Model 1}, as illustrated in Figure \ref{fig:Model1}, is specifically designed to predict prices by taking into account input variables such as Year, Region, and Variant. To achieve accurate predictions, this model incorporates a heuristic hierarchical multiple regression approach, which distinguishes it from conventional regression methods. This innovative technique allows for a more nuanced understanding of the relationships between variables, ultimately leading to improved performance and reliability.
 
 As for Hierarchical Multiple Regression, to solve the objective function for a given $n$ data points $(x_i, y_i)$:
 $$L(y,f(x,w))=\sum_{i=1}^{n}[y_i-f(x_i,w_i)]^2$$
@@ -351,11 +368,18 @@ where:
     $$\text{var}(\textbf{X})=\frac{\sum_{i=1}^{n}(\textbf{X}_i-\overline{\textbf{X}})(\textbf{X}_i-\overline{\textbf{X}})}{n-1}$$
     $$\text{cov}(\textbf{X},\textbf{Y})=\frac{\sum_{i=1}^{n}(\textbf{X}_i-\overline{\textbf{X}})(\textbf{Y}_i-\overline{\textbf{Y}})}{n-1}$$
 
-\begin{figure}[htbp]
+    \begin{figure}[htbp]
         \centering
-        \includegraphics[width=.8\textwidth]{accuracy.jpg}
-        \caption{Model Fitting Accuracy}\label{fig:accuracy}
-\end{figure}
+        \begin{subfigure}[b]{.4\textwidth}
+        \includegraphics[width=\textwidth]{accuracy1.jpg}
+        \caption{The fitting performance before denoising.}\label{subfig:accuracy1}
+        \end{subfigure}
+        \begin{subfigure}[b]{.4\textwidth}
+        \includegraphics[width=\textwidth]{accuracy2.png}
+        \caption{The fitting performance after denoising.}\label{subfig:accuracy2}
+        \end{subfigure}
+        \caption{Model Fitting Accuracy in HongKong}\label{fig:accuracy}
+    \end{figure} 
 
 
 \begin{table}[htbp]
@@ -394,18 +418,40 @@ where:
 \end{table}
 
 
-
 \section{Regional Effect Analysis}
+
 Applying \emph{Model 1}, we can easily abstract the effect of each region. 
 Therefore, by normalizing the year and variant, 
-we can clearly see the effect of each region(see Figure \ref{fig:region_effect}).
+we can clearly see the effect of each region(see Figure \ref{fig:region_effect1}).
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{region_effect.png}
-    \caption{Region's Effect}\label{fig:region_effect}
+    \includegraphics[width=1\textwidth]{region_effect1.png}
+    \caption{Region's Effect}\label{fig:region_effect1}
 \end{figure}
 
+After normalizing the year and the variant factor (thus eliminating their influence), we surprisingly find that the distribution of average price among regions turns much more uniform than that of the initial state. Moreover, the imparity by variants is small as soon as the year factor is normalized(see Figure \ref{fig:region_effect2}). So we can conclude that the regional effect is not significant across variants. And it's necessary to note that the regional effect mainly takes effect by featuring variants of different prices.
+
+Practically, the economic development level of the region best describes the region effect we found. Statistically, the GDP per capita is found of a strong positive linear correlation with the average variant prices of a region with linear correlation coefficient and p-testing.
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{region_effect2.png}
+    \caption{Region's Effect after nomarlizing Variant}\label{fig:region_effect2}
+\end{figure}
+
+To verify the significance of linear correlation, we should perform p-testing:
+Assuming that we choose $\alpha$ as the significance level for the p-value test (usually 0.01, 0.05, or 0.10) and the hypothesis is denoted as $H_0$, we first calculate the means and standard deviations of the two samples, denoted as $\bar{x}$ and $s$. Then, we calculate the t-value using the following formula:
+$$t=\frac{\bar{x}_1-\bar{x}_2}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}$$
+
+We calculate the degrees of freedom as $df = n_1 + n_2 - 2$, and then use the degrees of freedom and the significance level to look up the critical value of t from the t-distribution table with n-1 degrees of freedom. From this, we obtain the p-value:
+$$p=2\times P(T>|t|)$$
+
+Because we need to make a judgment about the correctness of the hypothesis $H_0$, we need to perform the following evaluation:
+$$\begin{cases}
+    p \geq\alpha ,\quad cannot \quad reject\quad H_0\\p<\alpha,\quad can \quad reject\quad H_0
+    \end{cases}$$
 
 \section{The Applicability of The Prediction Model in Hong Kong}
 When applying our model to the Hong Kong region, 
@@ -423,9 +469,16 @@ and the age of the sailboat to provide accurate and reliable pricing estimates.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=.8\textwidth]{accuracy.jpg}
-    \caption{Model Fitting Accuracy in HongKong}\label{fig:HongKong}
-\end{figure}
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{HK1.png}
+    \caption{Monohulled Sailboats}\label{subfig:HK1}
+    \end{subfigure}
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{HK2.png}
+    \caption{Catamaran}\label{subfig:HK2}
+    \end{subfigure}
+    \caption{Model Fitting Accuracy in HongKong}\label{fig:HK}
+\end{figure} 
 
 Interestingly, this regional effect is not observed in the subset of the monohulled sailboats market, suggesting that there are unique factors at play when it comes to the catamarans' market in Hong Kong. Upon further examination, we have deduced that the reason behind this discrepancy is likely due to Hong Kong's flourishing tourism industry.
 
@@ -450,6 +503,19 @@ Our model combines heuristic learning and hierarchical multivariate regression, 
 
 \textbf{Strength-3 Accuracy:}
 Our model performs exceptionally well in terms of both error analysis and accuracy, achieving 94.91\% on the Catamarans test set and 92.71\% on the Monohulled Boats test set. Moreover, the model can improve its accuracy through self-iteration and possesses heuristic learning capabilities.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{strength1.png}
+    \caption{Single Cycle}\label{subfig:SG1}
+    \end{subfigure}
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{strength2.png}
+    \caption{Muticycle}\label{subfig:SG2}
+    \end{subfigure}
+    \caption{Model accuracy improvement}\label{fig:strength}
+\end{figure} 
 
 \textbf{Strength-4 Applicability:}
 When applied to the Hong Kong market, the model maintains a high level of accuracy, demonstrating its excellent applicability. 
@@ -529,17 +595,62 @@ In summary, our study has successfully developed a powerful and versatile model 
 
 \noindent \textbf{\emph{Part One - Model Accuracy}}
 
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{report1.png}
+    \caption{Monohulled Sailboats}\label{subfig:report1}
+    \end{subfigure}
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{report2.png}
+    \caption{Catamaran}\label{subfig:report2}
+    \end{subfigure}
+    \caption{Model Fitting Accuracy}\label{fig:Report1}
+\end{figure} 
+
 The two line charts presented above use the actual prices as the x-axis and the predicted values from our model as the y-axis. The fit between the line and the $y=x$ equation demonstrates the accuracy of our model. Clearly, our model is highly effective in predicting the prices of used boats worldwide. We have tested the model's accuracy, achieving 94.91\% for Catamarans and 92.61\% for Monohulled Sailboats. Thus, our model is fundamentally accurate in its price predictions.
 
 \noindent \textbf{\emph{Part Two - Analysis of Variance}}
 
-Figure 3 reveals a strong linear correlation between price and year. The model shows that the Region's Effect influences market prices by affecting boat types. In particular, areas with higher per capita GDP tend to buy more expensive boat types, leading to higher average prices for used boats in these regions.
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{monohulled_price_year.png}
+    \caption{Monohulled Sailboats}\label{subfig:report3}
+    \end{subfigure}
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{catamaran_price_year.png}
+    \caption{Catamaran}\label{subfig:report4}
+    \end{subfigure}
+    \caption{The relationship between year and price}\label{fig:Report2}
+\end{figure} 
 
+Figure 15 reveals a strong linear correlation between price and year. The model shows that the Region's Effect influences market prices by affecting boat types. In particular, areas with higher per capita GDP tend to buy more expensive boat types, leading to higher average prices for used boats in these regions.
+\clearpage
 \noindent \textbf{\emph{Part Three - Model of Hong Kong}}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.5\textwidth]{report5.jpg}
+    \caption{Optimizing Model Performance}\label{fig:Report3}
+\end{figure}
 
 Comparing the slopes of the two regression models in Figure 4, we see that regional economic conditions impact both boat types. However, in Hong Kong, we found that the extra-regional effect is not found in the subset of the monohulled sailboats market. We infer that this is probably because of Hong Kong's prosperous tourism -- catamarans are better than monohulled sailboats for travelers.
 
 \noindent \textbf{\emph{Part Four - Interesting Conclusion}}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{.45\textwidth}
+    \includegraphics[width=\textwidth]{report3.png}
+    \caption{Monohulled Sailboats}\label{subfig:report5}
+    \end{subfigure}
+    \begin{subfigure}[b]{.4\textwidth}
+    \includegraphics[width=\textwidth]{report4.png}
+    \caption{Catamaran}\label{subfig:report6}
+    \end{subfigure}
+    \caption{Preferences for boat lengths vary among different regions}\label{fig:Report4}
+\end{figure} 
 
 Based on the two bar charts, we have drawn an interesting conclusion: the analysis results reveal that people in European regions tend to prefer sailing longer boats, while individuals in the Caribbean area are fond of navigating more extended catamarans. This phenomenon may be related to local geography and culture.
 

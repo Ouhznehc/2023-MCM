@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  4 APR 2023 06:13
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.8)  4 APR 2023 07:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -787,11 +787,12 @@ File: ./img//OurWork.png Graphic file (type bmp)
  [4]
 File: ./img//Data.png Graphic file (type bmp)
 <./img//Data.png>
+ [5]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 181.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 189.
 Requested font "[lmmonolt10-bold]:" at 12.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf
- [5] [6]
+ [6]
 File: ./img//error_data.png Graphic file (type bmp)
 <./img//error_data.png>
 Requested font "[lmmono12-regular]:" at 12.0pt
@@ -800,7 +801,7 @@ Requested font "[lmmono12-regular]:" at 12.0pt
 File: ./img//monohulled_price_year.png Graphic file (type bmp)
 <./img//monohulled_price_year.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 250.
+(Font)              scaled to size 10.0pt on input line 258.
 Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Regular.otf
 File: ./img//catamaran_price_year.png Graphic file (type bmp)
@@ -818,48 +819,77 @@ File: ./img//Deep_forest2.png Graphic file (type bmp)
  [10]
 File: ./img//Model2.png Graphic file (type bmp)
 <./img//Model2.png>
+ [11]
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 8.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
 Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 6.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-Bold.otf
- [11]
-File: ./img//accuracy.jpg Graphic file (type bmp)
-<./img//accuracy.jpg>
-File: ./img//region_effect.png Graphic file (type bmp)
-<./img//region_effect.png>
+File: ./img//accuracy1.jpg Graphic file (type bmp)
+<./img//accuracy1.jpg>
+File: ./img//accuracy2.png Graphic file (type bmp)
+<./img//accuracy2.png>
+File: ./img//region_effect1.png Graphic file (type bmp)
+<./img//region_effect1.png>
  [12]
-File: ./img//accuracy.jpg Graphic file (type bmp)
-<./img//accuracy.jpg>
- [13] [14] [15]
+File: ./img//region_effect2.png Graphic file (type bmp)
+<./img//region_effect2.png>
+ [13]
+File: ./img//HK1.png Graphic file (type bmp)
+<./img//HK1.png>
+File: ./img//HK2.png Graphic file (type bmp)
+<./img//HK2.png>
+ [14]
+File: ./img//strength1.png Graphic file (type bmp)
+<./img//strength1.png>
+File: ./img//strength2.png Graphic file (type bmp)
+<./img//strength2.png>
+ [15] [16]
 File: ./img//update.png Graphic file (type bmp)
 <./img//update.png>
- [16] [17] [18]
+ [17] [18] [19]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/it' will be
-(Font)              scaled to size 12.0pt on input line 530.
+(Font)              scaled to size 12.0pt on input line 596.
 Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
  -> /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newtx/TeXGyreTermesX-BoldItalic.otf
+File: ./img//report1.png Graphic file (type bmp)
+<./img//report1.png>
+File: ./img//report2.png Graphic file (type bmp)
+<./img//report2.png>
+File: ./img//monohulled_price_year.png Graphic file (type bmp)
+<./img//monohulled_price_year.png>
+File: ./img//catamaran_price_year.png Graphic file (type bmp)
+<./img//catamaran_price_year.png>
+ [20
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--548
+]
+File: ./img//report5.jpg Graphic file (type bmp)
+<./img//report5.jpg>
+File: ./img//report3.png Graphic file (type bmp)
+<./img//report3.png>
+File: ./img//report4.png Graphic file (type bmp)
+<./img//report4.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--659
 
  []
 
-[19
+[21
 
 ] 
 AED: lastpage setting LastPage
-[20
+[22
 
 ] (./PAPER.aux)
 Package rerunfilecheck Info: File `PAPER.out' has not changed.
 (rerunfilecheck)             Checksum: 7D5A1E0DA9495217A37499977B8B27DE;5328.
  ) 
 Here is how much of TeX's memory you used:
- 17786 strings out of 476179
- 338582 string characters out of 5809544
- 706706 words of memory out of 5000000
- 38221 multiletter control sequences out of 15000+600000
+ 17915 strings out of 476179
+ 341279 string characters out of 5809544
+ 707802 words of memory out of 5000000
+ 38339 multiletter control sequences out of 15000+600000
  477479 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,12n,99p,1059b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,12n,99p,1059b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PAPER.pdf (20 pages).
+Output written on PAPER.pdf (22 pages).
